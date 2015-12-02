@@ -1,0 +1,23 @@
+{
+	"entryPoint": 3,
+	"spots": [
+		{
+			"altCubemaps": "R0010020",
+			"title": "R0010020",
+			"cubemaps": "R0010020_highres",
+			"no": 1
+		},
+		{
+			"altCubemaps": "R0010026",
+			"cubemaps": "R0010026_highres",
+			"title": "R0010026",
+			"no": 2
+		},
+		{
+			"altCubemaps": "R0010031",
+			"title": "R0010031",
+			"cubemaps": "R0010031_highres",
+			"no": 3
+		}
+	]
+}

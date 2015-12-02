@@ -1,0 +1,19 @@
+{
+	"entryPoint": 2,
+	"spots": [
+		{
+			"altCubemaps": "R0010077_1124131827alt",
+			"cubemaps": "R0010077_1124131827",
+			"title": "R0010077_1124131827",
+			"no": 1,
+			"rotation": {"x":5.5,"y":8,"z":0}
+		},
+		{
+			"altCubemaps": "saidanmae_1121061146alt",
+			"cubemaps": "saidanmae_1121061146",
+			"title": "saidanmae_1121061146",
+			"no": 2,
+			"rotation": {"x":-2,"y":-2.5,"z":0}
+		}
+	]
+}

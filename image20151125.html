@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <title>VRページ</title>
+</head>
+
+<body class="vr">
+  <script src="lib/core/stats.min.js"></script>
+  <script src="lib/core/three.min.js"></script>
+  <script src="lib/core/tween.min.js"></script>
+  <script src="lib/threejs/CanvasRenderer.js"></script>
+  <script src="lib/threejs/Detector.js"></script>
+  <script src="lib/threejs/DeviceOrientationControls.js"></script>
+  <script src="lib/threejs/OculusRiftEffect.js"></script>
+  <script src="lib/threejs/OrbitControls.js"></script>
+  <script src="lib/threejs/Projector.js"></script>
+  <script src="lib/threejs/CSS3DStereoRenderer.js"></script>
+  <script src="js/StreetView.js"></script>
+  <script src="js/CameraManager.js"></script>
+  <script src="js/RendererManager.js"></script>
+  <script src="js/SphereManager.js"></script>
+  <script src="js/JsonManager.js"></script>
+  <script src="js/Link.js"></script>
+  <script src="js/Spot.js"></script>
+  <script src="js/CloseButtonManager.js"></script>
+  <script src="js/LinkMenuManager.js"></script>
+  <script src="js/SpotTitleManager.js"></script>
+  <script src="js/NextButtonManager.js"></script>
+  <script src="js/PointerManager.js"></script>
+  <script src="js/PreloaderManager.js"></script>
+  <script src="js/LinkMesh.js"></script>
+  <script src="js/Record.js"></script>
+
+  <!--<script src="js/min/main.min.js"></script>-->
+  <script>
+    var app = new StreetView({
+      jsonUrl: "./data/image20151125/data.json",
+      useMask:false
+    });
+    app.init();
+  </script>
+</body>
+
+</html>
