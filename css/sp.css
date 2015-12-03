@@ -337,26 +337,32 @@ body {
 	display:block;
 	width:auto;
 	clear:both;
+	vertical-align: top;
+	text-align: center;
+	margin: 0 auto
 	}	
 .boxImg .img-boxImg{
-	float:left;
+	/*float:left;*/
+	display: inline-block;
 	border:4px solid #fff;
 	-moz-box-shadow: 0px 0px 11px -3px #000;
    -webkit-box-shadow: 0px 0px 11px -3px #000;
 	box-shadow:0px 0px 11px -3px #000;
-	margin-right:20px;
+	margin-right:1%;
 	max-width:255px;
-	width:47%;
+	width:49%;
 	}	
 .boxhref{
-	display:block;
-	overflow:hidden;
-	width:auto;
-	text-align:left;
+	display:inline-block;
+	/*overflow:hidden;*/
+	width:44%;
+	text-align:center;
+	vertical-align: top;
+	margin-left:1%;
 	}
 .a-boxhref-1,
 .a-boxhref-2{
-	width:93%;
+	width:100%;
 	height:auto;
 	display:block;
 	cursor:pointer;
@@ -367,7 +373,7 @@ body {
 	max-width:225px;
 	}			
 .a-boxhref-1{
-	margin-bottom:8px;
+	margin-bottom:5%;
 	}		
 /*show popup*/
 .simplemodal-overlay{
@@ -540,9 +546,9 @@ body {
 
 }
 @media screen and (max-width: 414px) {
-	.a-boxhref-1, .a-boxhref-2 {
+	/*.a-boxhref-1, .a-boxhref-2 {
     width: 91%;
-	}
+	}*/
 	.c-popup-1 .p1{
 		font-size:17px;
 		}
