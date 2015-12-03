@@ -582,6 +582,9 @@ body {
 	.box p span{
 		margin-top:3px;
 	}
+	.a-boxhref-1 {
+    margin-bottom: 6%;
+	}
 }	
 @media screen and (max-width: 360px) {
 .list-theHawaii li span {
