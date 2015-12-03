@@ -117,7 +117,7 @@ body {
     font-size: 16px;
     text-align: justify;
     display: block;
-	margin:15px 0;
+	margin:20px 0 0 0;
 }
 .p-text-2 span{
 	display: block;
@@ -129,7 +129,7 @@ body {
 .p-text-2 img{
 	float: right;
 	max-width: 163px;
-	width: 21%;
+	width: 23%;
 	margin-left: 20px;
 }
 .p-text-3{
@@ -147,13 +147,13 @@ body {
 	background: rgba(255, 255, 255, 0.5);
 	height:auto;
 	padding:15px 3% 10px 3%;
-	margin-top:40px;
+	margin-top:30px;
 	-webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
 	}
 .theHawaii h2{
-	font-size:30px;
+	font-size:22px;
 	color:#555;
 	text-align:center;
 	display:block;
@@ -332,7 +332,7 @@ body {
 	font-size: 14px;
 	color: #555;
 	text-align: left;
-	margin: 13px 0
+	margin:7px 0 13px 0
 }		
 .boxImg{
 	display:block;
@@ -374,7 +374,7 @@ body {
 	max-width:225px;
 	}			
 .a-boxhref-1{
-	margin-bottom:5%;
+	margin-bottom:5.5%;
 	}		
 /*show popup*/
 .simplemodal-overlay{
@@ -571,10 +571,13 @@ body {
 	.span-three {
 		left: 25%;
 	}
+	.p-text-2 img {
+    	width: 29%;
+	}
 }
 @media screen and (max-width: 375px) {
 	.theHawaii h2 {
-		font-size: 24px;
+		font-size: 19px;
 	}
 	.box p span{
 		margin-top:3px;
@@ -589,3 +592,21 @@ body {
     font-size: 11px;
 	}
 }	
+@media screen and (max-width: 320px) {
+.p-text-2 {
+    font-size: 12px;
+	}
+.theHawaii h2 {
+    font-size: 16px;
+	}
+.boxp2 {
+    font-size: 12px;
+	}	
+.box p.boxp1 {
+    font-size: 16px;
+}
+.box p.boxp1 small {
+    font-size: 10px;
+}
+
+}
