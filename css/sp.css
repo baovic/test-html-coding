@@ -64,6 +64,7 @@ body {
     padding: 0;
     margin: 0;
     position: relative;
+    -webkit-text-size-adjust: none;
 }
 .bg-video{
 	width: 100%;
