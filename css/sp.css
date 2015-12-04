@@ -57,7 +57,7 @@ body {
 }
 .content{
     width: auto;
-   /* background: url(../images/sp/bg.png) repeat-x center top;*/
+    background: url(../images/sp/bg.png) repeat-x center top;
     
 	height:auto;
 	display:block;
@@ -101,10 +101,10 @@ body {
     height: 100%;
     position: relative;
     padding: 25px 4% 34px 4%;
-    background: rgba(255,255,255,0.7);
-    b/*ackground:linear-gradient(180deg, rgba(255,255,255,0.7),rgba(123,232,224,0.7));*/
-    /*background: linear-gradient(180deg, rgba(123,232,224,0.7),rgba(124,199,227,0.7),rgba(35,135,202,0.7));*/
-   /* background:linear-gradient(180deg,rgba(236,175,47,0.7),rgba(239,131,75,0.7),rgba(161,22,84,0.7));*/
+    /*background:linear-gradient(180deg, rgba(255,255,255,0.7),rgba(142,142,142,0.7));*/
+     background: rgba(255,255,255,0.2);
+    /* background: linear-gradient(180deg, rgba(123,232,,0.7),rgba(124,199,227,0.7),rgba(35,135,202,0.7));*/
+    /* background:linear-gradient(180deg,rgba(255,255,255,0.7),rgba(255,255,255,0.7),rgba(124,199,227,0.7),rgba(124,199,227,0.7));*/
 }
 .p-text-1{
 	display:block;
