@@ -9,45 +9,34 @@
   <title>VRページ</title>
 </head>
 
-<body class="vr">
-  <script src="lib/core/stats.min.js"></script>
-  <script src="lib/core/three.min.js"></script>
-  <script src="lib/core/tween.min.js"></script>
-  <script src="lib/threejs/CanvasRenderer.js"></script>
-  <script src="lib/threejs/Detector.js"></script>
-  <script src="lib/threejs/DeviceOrientationControls.js"></script>
-  <script src="lib/threejs/OculusRiftEffect.js"></script>
-  <script src="lib/threejs/OrbitControls.js"></script>
-  <script src="lib/threejs/Projector.js"></script>
-  <script src="lib/threejs/CSS3DStereoRenderer.js"></script>
-  <script src="js/StreetView.js"></script>
-  <script src="js/CameraManager.js"></script>
-  <script src="js/RendererManager.js"></script>
-  <script src="js/SphereManager.js"></script>
-  <script src="js/JsonManager.js"></script>
-  <script src="js/Link.js"></script>
-  <script src="js/Spot.js"></script>
-  <script src="js/CloseButtonManager.js"></script>
-  <script src="js/LinkMenuManager.js"></script>
-  <script src="js/SpotTitleManager.js"></script>
-  <script src="js/NextButtonManager.js"></script>
-  <script src="js/PointerManager.js"></script>
-  <script src="js/PreloaderManager.js"></script>
-  <script src="js/LinkMesh.js"></script>
-  <script src="js/Record.js"></script>
-
-  <!--<script src="js/min/main.min.js"></script>-->
+<body>
+  <script src="js/min/main.min.js"></script>
   <script>
+    var data = {
+      "entryPoint": 1,
+      "spots": [
+        {
+          "altCubemaps": "data/stcatalina/02_01alt",
+          "cubemaps": "data/stcatalina/02_01",
+          "title": "02_01",
+          "no": 1,
+          "rotation": { "x": 5.5, "y": 8, "z": 0 }
+        },
+        {
+          "altCubemaps": "data/stcatalina/02_02alt",
+          "cubemaps": "data/stcatalina/02_02",
+          "title": "02_02",
+          "no": 2,
+          "rotation": { "x": -2, "y": -2.5, "z": 0 }
+        }
+      ]
+    };
+    
     var app = new StreetView({
-      // jsonUrl: "./data/test/fullcube.json",
-      // jsonUrl: "./data/test/fullequirect.json",
-      // jsonUrl: "./data/test/cube_equirect_mix.json",
-            jsonUrl: "./data/image20151125/data.json",
-                        // jsonUrl: "./data/moanaall/data.json",
-      useMask:false,
-      // usePointer: true,
-      // renderType: 'CSS3D',
-      isDebug:true
+      useMask: false,
+      isDebug: true,
+      json: data,
+      indexUrl: './index.html'
     });
     app.init();
   </script>

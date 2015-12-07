@@ -1,4 +1,4 @@
-body.vr {
+body {
   background-color: #000000;
   margin: 0;
   overflow: hidden;
@@ -47,7 +47,7 @@ body.vr {
   position: absolute;
   width: 64px;
   height: 64px;
-  bottom: 180px;
+  bottom: 100px;
   right: 20px;
   background: url(../img/closeButton.png) bottom left no-repeat;
   background-size: 64px;
