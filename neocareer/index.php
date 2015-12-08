@@ -249,10 +249,9 @@
                              $('html, body').animate({scrollTop: $('.sendmail').offset().top}, 'slow');
                             });
                         </script>
-                </php            
+                <?php            
                         }else{
-                            echo "<p class='sendmail'>エラーにより送信できませんでした。<br>
-                            お手数ですが再度お試しいただくかinfo@livepass.jpまで直接メールを送ってください。</p>";
+                            echo "<p class='sendmail'>エラーにより送信できませんでした。<br>お手数ですが再度お試しいただくかinfo@livepass.jpまで直接メールを送ってください。</p>";
                 ?>
                         <script type="text/javascript">
                             $(document).ready(function(){
