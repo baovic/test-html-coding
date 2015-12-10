@@ -72,27 +72,27 @@
     /* background: linear-gradient(180deg, rgba(123,232,,0.7),rgba(124,199,227,0.7),rgba(35,135,202,0.7));*/
     /* background:linear-gradient(180deg,rgba(255,255,255,0.7),rgba(255,255,255,0.7),rgba(124,199,227,0.7),rgba(124,199,227,0.7));*/
 }
-.p-text-1{
+.p-text-1-sp{
 	display:block;
 	text-align:center;
 	}	
-.p-text-1 img{
+.p-text-1-sp img{
 	max-width:100%;
 	}	
-.p-text-2{
+.p-text-2-sp{
     font-size: 16px;
     text-align: justify;
     display: block;
 	margin:20px 0 0 0;
 }
-.p-text-2 span{
+.p-text-2-sp span{
 	display: block;
 	width: auto;
 	text-align: left;
 	overflow: hidden;
 	
 }
-.p-text-2 img{
+.p-text-2-sp img{
 	float: right;
 	max-width: 163px;
 	width: 23%;
