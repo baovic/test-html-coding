@@ -19,110 +19,13 @@
       <script type="text/javascript" src="/s/common/js/common.js"></script>
       </head>
       <body>
-      <!-- header start:SH01 -->
-      <style>
-              .zexyGlobalHeader {
-              border-bottom: 1px solid #F1EAEA;
-              }
-              .zexyGlobalHeader .hgroup {
-              background: -webkit-gradient(linear, left center, right center, from(#FFFFFF), to(#F3EBEB));
-              background: -moz-linear-gradient(from(#FFFFFF), to(#F3EBEB));
-              background: linear-gradient(#FFFFFF, #F3EBEB) repeat scroll 0 0 transparent;
-              border-bottom: 1px solid #E6D8D8;
-              height: 47px;
-              overflow: hidden;
-              }
-              .zexyGlobalHeader h1 {
-              float: left;
-              }
-              .zexyGlobalHeader h1 img {
-              height: 47px;
-              width: 91px;
-              }
-              .zexyGlobalHeader .zexyGlobalNav {
-              float: right;
-              }
-              .zexyGlobalHeader .zexyGlobalNav ul {
-              overflow: hidden;
-              }
-              .zexyGlobalHeader .zexyGlobalNav li {
-              float: left;
-              }
-              .zexyGlobalHeader .zexyGlobalNav li:last-child {
-              margin-left: 6px;
-              }
-      </style>
-      <header class="zexyGlobalHeader">
-              <div class="hgroup">
-                      <h1><a href="/s/"><img src="/s/images/logo.png" alt="ゼクシィ" width="91" height="47"></a></h1>
-                      <div class="zexyGlobalNav">
-                              <ul style="margin-right:5px;">
-                                      <li><a href="https://zexy.net/s/entry/preRegist/?fed=shd_non_con"><img src="/s/contents/images/btn_member.png" width="37" height="47" alt="新規会員登録"></a></li>
-                              </ul>
-                      </div>
-              </div>
-      </header>
-      <script type="text/javascript">
-      <!--
-              window.addEventListener('load',getBanner,false);
-             
-              function getBanner () {
-                      getBannerElement("zexyPRImageBanner","/s/bannerAjax/smp_image_banner_mar","121000010024");
-                      getBannerElement("zexyPRTextBanner","/s/bannerAjax/smp_text_banner_mar","121000010024");
-              }
-             
-              function getBannerElement (styleClass,url,pageTypeCd) {
-                      var xmlHttpRequest;
-                     
-                      xmlHttpRequest = new XMLHttpRequest();
-                     
-                      xmlHttpRequest.onreadystatechange = function(){
-                              if (xmlHttpRequest.readyState == 4 &&
-                                      xmlHttpRequest.status == 200 &&
-                                      xmlHttpRequest.responseText != null &&
-                                      xmlHttpRequest.responseText != "" &&
-                                      document.getElementsByClassName(styleClass).length > 0){
-                                     
-                                      setTimeout(function()
-                                      {
-                                              document.getElementsByClassName(styleClass)[0].innerHTML = xmlHttpRequest.responseText;
-                                              document.getElementsByClassName(styleClass)[0].style.display = "block";
-                                      }, 100);
-                              }
-                      }
-                      var dd = new Date();
-                      var reqUrl = url + "?" + "pageTypeCd=" + pageTypeCd  + "&" + "t=" + dd.getTime();
-                      xmlHttpRequest.open("GET",reqUrl, true);
-                      xmlHttpRequest.send(null);
-              }
-      // -->
-      </script>
-      <section>
-              <style>
-                     .zexyPRImageBanner {
-                             width: 100%;
-                             padding: 4px 0 10px 0;
-                             background-color: #ffffff;
-                             display: none;
-                     }
-                     .zexyPRImageBanner p {
-                             margin: 0 auto;
-                             text-align: center;
-                     }
-                     .zexyPRImageBanner a {
-                             display: inline-block;
-                     }
-             </style>
-             <div class="zexyPRImageBanner"></div>
-     </section>
-     
-     <!-- header end -->
+
      
      <!--#contents-->
      <div id="contents">
         <!-- container Bao add code html sp 02/12/2015 -->
      		<div class="container">
-            <div class="bg-video"></div>
+            <div class="bg-video"><img src="images/hawaii-o.gif"></div>
             <img src="images/sp/img-1.png" class="img-1">
             
             <div class="content">
@@ -159,8 +62,8 @@
                                               <div class="boxImg">
                                                   <img src="images/sp/img-list-11.png" class="img-boxImg">
                                                   <div class="boxhref">
-                                                          <a class="a-boxhref-1" target="_blank" href="http://zexy.net/s/mar/news/vr/0000000842/?fed=cmp_wed_vr_special1"><img src="images/sp/img-9.png"></a>
-                                                          <a target="_blank" target="_blank" href="http://zexy.net/abroad/chapel/0000000842/base/?fed=cmp_wed_vr_chapel1" class="a-boxhref-2"><img src="images/sp/img-10.png"></a>
+                                                    <a class="a-boxhref-1" target="_blank" href="http://zexy.net/s/mar/news/vr/0000000842/?fed=cmp_wed_vr_special1"><img src="images/sp/img-9.png"></a>
+                                                    <a target="_blank" target="_blank" href="http://zexy.net/abroad/chapel/0000000842/base/?fed=cmp_wed_vr_chapel1" class="a-boxhref-2"><img src="images/sp/img-10.png"></a>
                                                   </div>
                                               </div>
                                       </div>
