@@ -225,7 +225,7 @@
                           
                           $headers .= "Organization: Sender Organization\r\n";
                           $headers .= "MIME-Version: 1.0\r\n";
-                          $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
+                          $headers .= "Content-type: text/html; charset=utf8\r\n";
                           $headers .= "X-Priority: 3\r\n";
                           $headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
 
@@ -246,7 +246,7 @@
                 ?>
                           <script type="text/javascript">
                             $(document).ready(function(){
-                             $('html, body').animate({scrollTop: $('.sendmail').offset().top}, 'slow');
+                             $('html, body').animate({scrollTop: $('.sendmail').offset().top}, 500);
                             });
                         </script>
                 <?php            
@@ -255,7 +255,8 @@
                 ?>
                         <script type="text/javascript">
                             $(document).ready(function(){
-                             $('html, body').animate({scrollTop: $('.sendmail').offset().top}, 'slow');
+                             $('html, body').animate({scrollTop: $('.sendmail').offset().top}, 500);
+
                             });
                         </script>
                 <?php            

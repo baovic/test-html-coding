@@ -214,3 +214,9 @@ body {
 	display: block;
 	margin-bottom: 20px;
 }
+.show-pc{
+	display: block;
+}
+.show-sp{
+	display: none;
+}

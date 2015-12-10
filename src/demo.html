@@ -11,10 +11,10 @@
 
 <body>
   <script src="js/min/main.min.js"></script>
-  <script>
+  <script>    
     var data = {
-      "entryPoint": 1,
-      "spots": [
+        "entryPoint": 1,
+        "spots": [
         {
           "altCubemaps": "data/stcatalina/02_01alt",
           "cubemaps": "data/stcatalina/02_01",
@@ -23,17 +23,25 @@
           "rotation": { "x": 5.5, "y": 8, "z": 0 }
         },
         {
-          "altCubemaps": "data/stcatalina/02_02alt",
-          "cubemaps": "data/stcatalina/02_02",
-          "title": "02_02",
+          "altFile": "data/test/R0010026_low.JPG",
+          "file": "data/test/R0010026.JPG",
+          "title": "R0010026",
           "no": 2,
-          "rotation": { "x": -2, "y": -2.5, "z": 0 }
-        }
-      ]
+          "links": [
+            {
+              "to": 1,
+              "direction": 0
+            },
+            {
+              "to": 2,
+              "direction": 105
+            }
+          ]
+        },
+        ]
     };
     
     var app = new StreetView({
-      useMask: false,
       isDebug: true,
       json: data,
       indexUrl: './index.html'

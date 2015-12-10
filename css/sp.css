@@ -1,44 +1,9 @@
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead {
-    border: 0 none;
-    font-family: inherit;
-    font-size: 100%;
-    font-style: inherit;
-    font-weight: inherit;
-    margin: 0;
-    outline: 0 none;
-    padding: 0;
+@media screen and (max-width: 640px) {
+.show-pc{
+	display: none;
 }
-:focus {
-    outline: 0 none;
-}
-ol, ul {
-    list-style: outside none none;
-}
-caption {
-    font-weight: normal;
-    text-align: left;
-}
-blockquote::before, blockquote::after, q::before, q::after {
-    content: "";
-}
-blockquote, q {
-    quotes: "" "";
-}
-a img {
-    border: 0 none;
-}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-a {
-    text-decoration: none;
-}
-body {
-    color: #555555;
-    font-family: "ヒラガナ角ゴ PronN W3","Hiragino Kaku Gothic ProN",Verdana,Roboto,"Droid Sans","遊ゴシック",YuGothic,"メイリオ",Meiryo,sans-serif;
-    font-size: 14px;
-    position: relative;
+.show-sp{
+	display: block;
 }
 /* container
 ---------------------------------------------------------------------------------------------------- */
@@ -54,10 +19,12 @@ body {
     max-width: 100%;
     display: block;
     margin: 0 auto;
+    position: relative;
+    z-index: 11;
 }
 .content{
     width: auto;
-    background: url(../images/sp/bg.png) repeat-x center top;
+    /*background: url(../images/sp/bg.png) repeat-x center top;*/
     
 	height:auto;
 	display:block;
@@ -69,12 +36,11 @@ body {
 .bg-video{
 	width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
+    position: fixed;
+    top: 49px;
+    left: 50%;
+    margin-left: -320px;
+    
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -173,15 +139,18 @@ body {
 	}	
 .list-theHawaii li{
 	display:inline-block;
-	max-width:100px;
+	max-width:96px;
 	height:auto;
 	position:relative;
-	
-	margin:0 1%;
-	width:17%;
-	}	
+	border: 1px solid #a38256;
+	padding: 1px;
+	margin:0;
+	width:18%;
+	}
 .list-theHawaii li img{
-	width:100%;
+	max-width: 94px;
+	width:98%;
+	border: 1px solid #d0ba9d;
 	}	
 .list-theHawaii li:first-child{
 	margin-left:0;
@@ -327,6 +296,8 @@ body {
 	margin-right:3px;
 	vertical-align: top;
     margin-top: 5px;
+    float: left;
+    line-height: 23px;
 	}
 .boxp2{
 	font-size: 14px;
@@ -392,7 +363,7 @@ body {
     z-index: 999999;
 }
 .show-content{
-    top: 0px;
+    top: -38px;
     height: auto;
     position: absolute;
     z-index: 999999999;
@@ -423,30 +394,32 @@ body {
 	}	
 .img-popup2{
 	float:left;
-	margin:-10px 0px 10px -4%;
+	margin:-10px 0px 10px -3%;
 	max-width: 587px;
     width: 100%;
 	}
 .img-popup3{
 	float:left;
-	margin:-10px 0px 0 -4%;
+	margin:-10px 0px 0 -3%;
 	max-width: 588px;
     width: 100%;
 	}	
 .img-popup4{
 	float:left;
-	margin:-10px 0px 0 -4%;
+	margin:-10px 0px 0 -3%;
 	max-width: 582px;
     width: 100%;
 	}		
 .c-popup-1{
-	display:block;
-	width:auto;
-	overflow:hidden;
-	text-align:left;
+	display: block;
+    text-align: left;
+    position: absolute;
+    margin-left: 47%;
+    margin-right: 10px;
+    top: 6px;
 	}	
 .c-popup-1 .p1{
-	font-size:20px;
+	font-size:17px;
 	text-align:left;
 	display:block;
 	margin-top:36px;
@@ -454,7 +427,7 @@ body {
 	font-weight:bold;
 	}
 .c-popup-1 .p2{
-	font-size:16px;
+	font-size:13px;
 	text-align:left;
 	display:block;
 	}	
@@ -465,7 +438,10 @@ body {
     position: absolute;
     bottom: -10px;
 }	
-
+.c-popup-2{
+    margin-left: 59%;
+    top: 19%;
+	}
 .popup-2{
 	display:block;
 	width:auto;
@@ -515,101 +491,114 @@ body {
 .img-popup{
 	max-width:489px;
 	width:100%;
-	}	
-@media screen and (max-width: 640px) {
+	}		
 .container {
-    width: 100%;
+width: 100%;
 }	
-	.show-content{
-    top: 25px;
-    height: auto;
-    position: absolute;
-    z-index: 999999999;
-    display: none;
-    width:94%;
-    height: auto;
-    left: inherit;
-    text-align: center;
-    padding: 40px 0px;
-	margin: 0 3%;
-	background:url(../images/img-popup5.png) no-repeat center center;
+.show-content{
+top: -38px;
+height: auto;
+position: absolute;
+z-index: 999999999;
+display: none;
+width:94%;
+height: auto;
+left: inherit;
+text-align: center;
+padding: 40px 0px;
+margin: 0 3%;
+background:url(../images/img-popup5.png) no-repeat center center;
 }
 
 .p5 {
-    display: block;
-    width: 100%;
-    position: absolute;
-    left: inherit;
-    bottom: 14px;
-    margin-left: auto;
-	}
-.span-three {
-		left: 27%;
-	}
-.span-two{
-    right: 9%
-	}
-	.span-one {
-    right: 28%;
-	}	
+display: block;
+width: 100%;
+position: absolute;
+left: inherit;
+bottom: 14px;
+margin-left: auto;
 }
-@media screen and (max-width: 560px) {
-	.span-three {
-		left: 25%;
-	}
-	.span-two{
-    right: 8%;
-	}
+.span-three {
+	left: 27%;
+}
+.span-two{
+right: 9%
+}
+.span-one {
+right: 28%;
+}	
+.bg-video{
+left: 0;
+margin-left: auto;
+
+}	
 
 }
+@media screen and (max-width: 560px) {
+.span-three {
+	left: 25%;
+}
+.span-two{
+right: 8%;
+}
+
+}
+@media screen and (max-width: 462px) {
+.list-theHawaii li{
+	width: 17%;
+}
+}
 @media screen and (max-width: 414px) {
-	/*.a-boxhref-1, .a-boxhref-2 {
-    width: 91%;
-	}*/
-	.c-popup-1 .p1{
-		font-size:17px;
-		}
-	.c-popup-1 .p2{
-		font-size:13px;
-		}
-	.p5 a {
-		font-size: 20px;
-		padding: 7px 65px;
-	}	
-	.span-two,
-	.span-three,
-	.span-one,
-	.span-four,
-	.span-five{
-		width: 20px;
-    	height: 29px;
+/*.a-boxhref-1, .a-boxhref-2 {
+width: 91%;
+}*/
+.c-popup-1 .p1{
+	font-size:17px;
 	}
-	.span-three {
-		left: 25%;
+.c-popup-1 .p2{
+	font-size:13px;
 	}
-	.p-text-2 img {
-    	width: 29%;
-	}
+.p5 a {
+	font-size: 20px;
+	padding: 7px 65px;
+}	
+.span-two,
+.span-three,
+.span-one,
+.span-four,
+.span-five{
+	width: 20px;
+	height: 29px;
+}
+.span-three {
+	left: 25%;
+}
+.p-text-2 img {
+	width: 29%;
+}
 }
 @media screen and (max-width: 375px) {
-	.theHawaii h2 {
-		font-size: 19px;
-	}
-	.box p span{
-		margin-top:3px;
-	}
-	.a-boxhref-1 {
-    margin-bottom: 6%;
-	}
+.theHawaii h2 {
+	font-size: 19px;
+}
+.box p span{
+	margin-top:3px;
+}
+.a-boxhref-1 {
+margin-bottom: 6%;
+}
+.popup-3{
+margin-top: 45px;
+}
 }	
 @media screen and (max-width: 360px) {
 .list-theHawaii li span {
-    top: -9px;
-    
-    width: 15px;
-    height: 15px;
-    font-size: 11px;
-	}
+top: -9px;
+
+width: 15px;
+height: 15px;
+font-size: 11px;
+}
 }	
 @media screen and (max-width: 320px) {
 .p-text-2 {
@@ -626,6 +615,9 @@ body {
 }
 .box p.boxp1 small {
     font-size: 10px;
+}
+.popup-3{
+	margin-top: 100px;
 }
 
 }
