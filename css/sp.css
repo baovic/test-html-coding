@@ -538,9 +538,10 @@ right: 28%;
 .bg-video{
 left: 0;
 margin-left: auto;
-
 }	
-
+.bg-video-top{
+	top: 0;
+}
 }
 @media screen and (max-width: 570px) {
 .img-popup2,

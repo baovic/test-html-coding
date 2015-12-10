@@ -799,6 +799,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     $('.simplemodal-overlay').hide(); 
                 });
             });
+          if(screen.width <= 640){
+            $(window).bind('scroll', function () {
+                if ($(window).scrollTop() > 49) {
+                  $(".bg-video").addClass("bg-video-top");
+                }
+                else{
+                  $(".bg-video").removeClass("bg-video-top");
+                }
+            });      
+          }        
     </script>       
   </body>
 </html>
