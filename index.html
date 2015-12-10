@@ -517,6 +517,41 @@ s.pageName = "【ページ名】";
 s.prop3 = "";   
 s.prop4 = "";   
 var s_code=s.t();if(s_code)document.write(s_code)//--></script> 
+<script type="text/javascript">
+     //<![CDATA[
+     s.pageName = "【ページ名】";
+     s.prop3 = "";
+     s.prop4 = "";
+              function removeSearchParameter(checkQuery) {
+             if (checkQuery.length < 2) {
+                     return checkQuery;
+             }
+             var regQuery = new RegExp("[?&](tdfkn|area|tkch|ht|st|in|bg|x|y)=[^?&]*","g");
+             checkQuery = checkQuery.replace(regQuery,"");
+     
+             if (checkQuery.length > 0) {
+                     checkQuery = "?" + checkQuery.substring(1);
+             }
+             return checkQuery;
+     }
+     var reg = new RegExp("(client|shop|stationShop|shohin|plan|fair|fairClient)List");
+     var pathname = location.pathname;
+     if (pathname.match(reg)) {
+             s.pageURL = location.protocol+"//"+location.host+pathname + removeSearchParameter(location.search);
+     }
+     var referrer = document.referrer;
+     if (referrer && referrer.match(reg)) {
+             var refQuery = "";
+             if (referrer.indexOf("?") != -1) {
+                     refQuery = referrer.substring(referrer.indexOf("?"));
+                     refQuery = removeSearchParameter(refQuery);
+             }
+             s.referrer = referrer.replace(/\?.*/,refQuery);
+     }
+     var s_code=s.t();if(s_code)document.write(s_code)
+     //]]>
+     </script>
+     <!-- End SiteCatalyst code version: H.20.3. -->
 <!-- End SiteCatalyst code version: H.20.3. --> 
 <!-- WebAntenna -->     
 <script type="text/javascript"  
@@ -599,36 +634,7 @@ src="//tr.webantenna.info/_webantenna.png?ga=WAQhmt-1&amp;jse=0" />
 
           <!-- footer for sp -->
             <div class="show-sp"> 
-              function removeSearchParameter(checkQuery) {
-             if (checkQuery.length < 2) {
-                     return checkQuery;
-             }
-             var regQuery = new RegExp("[?&](tdfkn|area|tkch|ht|st|in|bg|x|y)=[^?&]*","g");
-             checkQuery = checkQuery.replace(regQuery,"");
-     
-             if (checkQuery.length > 0) {
-                     checkQuery = "?" + checkQuery.substring(1);
-             }
-             return checkQuery;
-     }
-     var reg = new RegExp("(client|shop|stationShop|shohin|plan|fair|fairClient)List");
-     var pathname = location.pathname;
-     if (pathname.match(reg)) {
-             s.pageURL = location.protocol+"//"+location.host+pathname + removeSearchParameter(location.search);
-     }
-     var referrer = document.referrer;
-     if (referrer && referrer.match(reg)) {
-             var refQuery = "";
-             if (referrer.indexOf("?") != -1) {
-                     refQuery = referrer.substring(referrer.indexOf("?"));
-                     refQuery = removeSearchParameter(refQuery);
-             }
-             s.referrer = referrer.replace(/\?.*/,refQuery);
-     }
-     var s_code=s.t();if(s_code)document.write(s_code)
-     //]]>
-     </script>
-     <!-- End SiteCatalyst code version: H.20.3. -->
+
      
      
      <footer>
