@@ -788,6 +788,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     $('.box5').show();  
                 });
                 $('.img-text2').click(function(){
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 1);
                     $('.show-content').show();
                     $('.simplemodal-overlay').show(); 
                 });
