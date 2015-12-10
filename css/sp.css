@@ -18,7 +18,7 @@
 .img-1{
     max-width: 100%;
     display: block;
-    margin: -22px auto 0 auto;
+    margin:0 auto;
     position: relative;
     z-index: 11;
 }
