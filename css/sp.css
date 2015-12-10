@@ -151,6 +151,7 @@
 	max-width: 94px;
 	width:98%;
 	border: 1px solid #d0ba9d;
+	display: block;
 	}	
 .list-theHawaii li:first-child{
 	margin-left:0;
