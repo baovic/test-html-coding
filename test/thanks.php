@@ -33,7 +33,41 @@
         </div>
         <!--header-->
             <div class="container container-sp-C"> 
+                <?php
+                     if (isset($_POST['email']))
+                    {   
+                          echo $_POST['email'];
+                          exit;
+                           $phone = "";
+                           if (isset($_POST['phone'])){
+                               $phone = $_POST['phone'];
+                               }
+                           $headers .= "Reply-To: ".$_POST['email']."\r\n"; 
+                           $headers .= "Return-Path: ".$_POST['email']."\r\n";
+                           $headers .= "From: ".$_POST['email']."\r\n"; 
+                          
+                           $headers .= "Organization: Sender Organization\r\n";
+                           $headers .= "MIME-Version: 1.0\r\n";
+                           $headers .= "Content-type: text/html; charset=utf8\r\n";
+                           $headers .= "X-Priority: 3\r\n";
+                           $headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
 
+                          
+                           $to      = "info@livepass.jp";
+                           $subject = "livepassCatch からのお問い合わせ";
+                           $message ='
+                             <p>会社名: '.$_POST['global'].'</p>
+                             <p>お名前: '.$_POST['masahiko'].'</p>
+                             <p>メールアドレス: '.$_POST['email'].'</p>
+                             <p>電話番号: '.$phone.'</p>
+                             <p>お問い合わせ・ご相談内容</p>
+                             <p>'.$_POST['content'].'</p>
+                        ';
+                        $options="Content-type:text/html;charset=utf-8\r\nFrom:$from\r\nReply-to:$from";
+                        mail($to,$subject,$message,$headers);
+                                       
+                     }
+                ?>
                 
                 <h2 class="thanks">メール送信完了</h2>
                 <div class="c-thank">
