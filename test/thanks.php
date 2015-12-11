@@ -36,8 +36,7 @@
                 <?php
                      if (isset($_POST['email']))
                     {   
-                          echo $_POST['email'];
-                          exit;
+                          
                            $phone = "";
                            if (isset($_POST['phone'])){
                                $phone = $_POST['phone'];
