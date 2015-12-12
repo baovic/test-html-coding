@@ -71,7 +71,7 @@
                     </li>
                     <li>
                       <img src="images/img-3.png" class="show-pc">
-                      <img src="images/sp/img-2.png" class="show-sp">
+                      <img src="images/sp/img-3.png" class="show-sp">
                     </li>
                 </ul>
                  <h2>お客様の声</h2>
