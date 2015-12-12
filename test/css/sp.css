@@ -95,6 +95,10 @@ h2 {
 	padding: 2.5%;
 	width: 100% ;
 }
+.listVoice-1 li p{
+    overflow: inherit;
+}
+
 .listVoice-1 li p .span1{
 	margin-bottom: 3px;
 }
