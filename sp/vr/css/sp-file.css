@@ -1,0 +1,737 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead {
+    border: 0 none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+}
+:focus {
+    outline: 0 none;
+}
+ol, ul {
+    list-style: outside none none;
+}
+caption {
+    font-weight: normal;
+    text-align: left;
+}
+blockquote::before, blockquote::after, q::before, q::after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+a img {
+    border: 0 none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+body {
+    color: #555555;
+    font-family: "ヒラガナ角ゴ PronN W3","Hiragino Kaku Gothic ProN",Verdana,Roboto,"Droid Sans","遊ゴシック",YuGothic,"メイリオ",Meiryo,sans-serif;
+    font-size: 14px;
+    position: relative;
+}
+
+/* container
+---------------------------------------------------------------------------------------------------- */
+.container {
+    display: block;
+    height: auto;
+    width: 640px;
+    
+	margin:0 auto;
+	text-align:center
+}
+.img-1{
+    max-width: 100%;
+    display: block;
+    margin:0 auto;
+    position: relative;
+    z-index: 11;
+}
+.content{
+    width: auto;
+    /*background: url(../images/sp/bg.png) repeat-x center top;*/
+    
+	height:auto;
+	display:block;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    -webkit-text-size-adjust: none;
+}
+.bg-video{
+	width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 49px;
+    left: 50%;
+    margin-left: -320px;
+   
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    /*background: url(../images/hawaii-o.gif) no-repeat left top;*/
+}
+.bg-video img{
+	max-width: 640px;
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+/*.pc{
+	width: 100%;
+    max-width: 180%!important;
+    min-width: 20%!important;
+    height: 100%;
+    max-height: 180%!important;
+    min-height: 20%!important;
+}
+#backgroundvideo.h {
+    width: auto;
+    height: 100%;
+}
+#backgroundvideo {
+    min-width: 100%;
+    min-height: 100%;
+}*/
+.contentOnvideo{
+	z-index: 11;
+    height: 100%;
+    position: relative;
+    padding: 25px 4% 34px 4%;
+    /*background:linear-gradient(180deg, rgba(255,255,255,0.7),rgba(142,142,142,0.7));*/
+     background: rgba(255,255,255,0.2);
+    /* background: linear-gradient(180deg, rgba(123,232,,0.7),rgba(124,199,227,0.7),rgba(35,135,202,0.7));*/
+    /* background:linear-gradient(180deg,rgba(255,255,255,0.7),rgba(255,255,255,0.7),rgba(124,199,227,0.7),rgba(124,199,227,0.7));*/
+}
+.p-text-1-sp{
+	display:block;
+	text-align:center;
+	}	
+.p-text-1-sp img{
+	max-width:100%;
+	}	
+.p-text-2-sp{
+    font-size: 16px;
+    text-align: justify;
+    display: block;
+	margin:20px 0 0 0;
+}
+.p-text-2-sp span{
+	display: block;
+	width: auto;
+	text-align: left;
+	overflow: hidden;
+	
+}
+.p-text-2-sp img{
+	float: right;
+	max-width: 163px;
+	width: 23%;
+	margin-left: 20px;
+}
+.p-text-3{
+	display:block;
+	text-align:center;
+	clear: both;
+	}	
+.p-text-3 img{
+	max-width:100%;
+	cursor:pointer;
+	}	
+.theHawaii{
+	display:block;
+	width:auto;
+	background: rgba(255, 255, 255, 0.5);
+	height:auto;
+	padding:15px 3% 10px 3%;
+	margin-top:30px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	}
+.theHawaii h2{
+	font-size:22px;
+	color:#555;
+	text-align:center;
+	display:block;
+	font-weight:bold;
+	}	
+.p-text-2-1{
+	margin: 10px 0;
+	}	
+.list-theHawaii{
+	display:inline-block;
+	margin:30px 0px 258px 0px;
+	width:100%;
+	padding:0;
+	position:relative;
+	text-align:center;
+	z-index: 1;
+	}	
+.list-theHawaii li{
+	display:inline-block;
+	max-width:96px;
+	height:auto;
+	position:relative;
+	border: 1px solid #a38256;
+	padding: 1px;
+	margin:0;
+	width:18%;
+	}
+.list-theHawaii li img{
+	max-width: 94px;
+	width:98%;
+	border: 1px solid #d0ba9d;
+	display: block;
+	}	
+.list-theHawaii li:first-child{
+	margin-left:0;
+	}	
+.list-theHawaii li:nth-child(5n){
+	margin-right:0;
+	}	
+.list-theHawaii li span{
+	position: absolute;
+    top: -16px;
+    left: 35%;
+    width: 22px;
+    height: 22px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background: #99765e;
+    color: #fff;
+    font-size: 14px;
+    border: 2px solid #fff;
+    text-align: center;
+	}	
+.p-map{
+	display:block;
+	text-align:center;
+	position: relative;
+	}	
+.span-one{
+	position: absolute;
+    right: 27.5%;
+    width: 26px;
+    height: 39px;
+    cursor: pointer;
+    bottom: 11%;
+   
+}
+.span-two{
+	position: absolute;
+    right: 62px;
+    width: 31px;
+    height: 44px;
+   cursor: pointer;
+    bottom: 19%;
+    
+}
+.span-three{
+	 position: absolute;
+    left: 152px;
+    width: 31px;
+    height: 44px;
+    cursor: pointer;
+    bottom: 23%;
+    
+}
+.span-four{
+	position: absolute;
+    right: 35.6%;
+    width: 30px;
+    height: 36px;
+    cursor: pointer;
+    bottom: 6%;
+    
+}
+.span-five{
+	position: absolute;
+    right: 34%;
+    width: 26px;
+    height: 37px;
+    cursor: pointer;
+    bottom: 18%;
+    
+}		
+.p-map img{
+	max-width:100%;
+	}	
+.boxHawaiiMax{
+	border:1px solid #a48353;
+	display:inline-block;
+	width:auto;
+	padding:2px;
+	height:auto;
+	position:absolute;
+	top:115%;
+	width:calc(100% - 6px);
+	left:0;
+	}
+.left-top{
+	position:absolute;
+	top:-1px;
+	left:-1px;
+	}
+.left-bottom{
+	position:absolute;
+	bottom:-1px;
+	left:-1px;
+	}
+.right-top{
+	position:absolute;
+	top:-1px;
+	right:-1px;
+	}
+.right-bottom{
+	position:absolute;
+	bottom:-1px;
+	right:-1px;
+	}				
+.boxHawaiiMin{
+	border:1px solid #c1b39f;
+	display:inline-block;
+	width:calc(96% - 2px);
+	padding:2%;
+	height:auto;
+	background:#fff;
+	}	
+.box1{
+	display:block;
+	width:auto;
+	height:auto;
+	}	
+.box p.boxp1{
+	display:block;
+	text-align:left;
+	margin:0;
+	padding:0;
+	color:#8a664e;
+	font-size:20px;
+	vertical-align:top;
+	line-height: 20px;
+	}	
+.box p.boxp1 small{
+	font-size:12px;
+	display:block;
+	margin-left:29px;
+	margin-top:-4px;
+	}	
+.box p.boxp1 span{
+	width: 22px;
+    height: 22px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background: #99765e;
+    color: #fff;
+    font-size: 14px;
+    border: 2px solid #fff;
+    text-align: center;
+	display:inline-block;
+	margin-right:3px;
+	vertical-align: top;
+    margin-top: 5px;
+    float: left;
+    line-height: 23px;
+	}
+.boxp2{
+	font-size: 14px;
+	color: #555;
+	text-align: left;
+	margin:7px 0 13px 0
+}		
+.boxImg{
+	display:block;
+	width:auto;
+	clear:both;
+	vertical-align: top;
+	text-align: center;
+	margin: 0 auto
+	}	
+.boxImg .img-boxImg{
+	/*float:left;*/
+	display: inline-block;
+	border:4px solid #fff;
+	-moz-box-shadow: 0px 0px 11px -3px #000;
+   -webkit-box-shadow: 0px 0px 11px -3px #000;
+	box-shadow:0px 0px 11px -3px #000;
+	margin-right:1%;
+	max-width:255px;
+	width:49%;
+	}	
+.boxhref{
+	display:inline-block;
+	/*overflow:hidden;*/
+	width:44%;
+	text-align:center;
+	vertical-align: top;
+	margin-left:1%;
+	}
+.a-boxhref-1,
+.a-boxhref-2{
+	width:100%;
+	height:auto;
+	display:block;
+	cursor:pointer;
+	}
+.a-boxhref-1 img,
+.a-boxhref-2 img{
+	width:100%;
+	max-width:225px;
+	}			
+.a-boxhref-1{
+	margin-bottom:2.5%;
+	}		
+/*show popup*/
+.simplemodal-overlay{
+    position: fixed;
+    z-index: 99;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: #0a9ed8;
+    display: none;
+    zoom: 1;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    z-index: 999999;
+}
+.show-content{
+    top: 0px;
+    height: auto;
+    position: absolute;
+    z-index: 999999999;
+    display: none;
+    width: 580px;
+    height: auto;
+    left: 50%;
+    text-align: center;
+    padding: 40px 0px;
+	margin-left: -289px;
+	background:url(../images/img-popup5.png) no-repeat center center;
+}	
+.show-content-1{
+	background: rgba(255, 255, 255, 0.8);
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+	width:auto;
+	display:block;
+	margin-top:20px;
+	padding: 0;
+	}
+.popup-1{
+	display:inline-block;
+	width:100%;
+	margin-bottom:10px;
+	position: relative;
+	}	
+.img-popup2{
+	float:left;
+	margin:-10px 0px 10px -3%;
+	max-width: 587px;
+    width: 100%;
+	}
+.img-popup3{
+	float:left;
+	margin:-10px 0px 0 -3%;
+	max-width: 588px;
+    width: 100%;
+	}	
+.img-popup4{
+	float:left;
+	margin:-10px 0px 0 -3%;
+	max-width: 582px;
+    width: 100%;
+	}		
+.c-popup-1{
+	display: block;
+    text-align: left;
+    position: absolute;
+    margin-left: 47%;
+    margin-right: 10px;
+    top: 6px;
+	}	
+.c-popup-1 .p1{
+	font-size:17px;
+	text-align:left;
+	display:block;
+	margin-top:36px;
+	margin-bottom:5px;
+	font-weight:bold;
+	}
+.c-popup-1 .p2{
+	font-size:13px;
+	text-align:left;
+	display:block;
+	}	
+.c-popup-1 .p23{
+	    font-size: 16px;
+    text-align: left;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+}	
+.c-popup-2{
+    margin-left: 59%;
+    top: 19%;
+	}
+.popup-2{
+	display:block;
+	width:auto;
+	text-align:center;
+	}
+.popup-2 img{
+	max-width:460px;
+	width:75%;
+	}				
+.popup-1 .p3{
+	font-size:13px;
+	text-align:left;
+	font-weight:bold;
+	display:block;
+	}	
+.popup-1 .p4{
+	font-weight:normal;
+	margin-bottom:30px;
+	text-align:justify;
+	}	
+.popup-3{
+    padding: 0 15px 20px 15px;
+    display: block;
+    width: auto;
+    margin-bottom: 0;
+    margin-top: 15px;
+}	
+.p5{
+	    display: block;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 14px;
+    margin-left: -106px;
+	}	
+.p5 a{
+	background:#99765e;
+	color:#fff;
+	font-size:20px;
+	display:inline-block;
+	padding:10px 75px;
+	-webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+	cursor:pointer;
+	}
+.img-popup{
+	max-width:489px;
+	width:100%;
+	}		
+
+.show-content{
+top: -38px;
+height: auto;
+position: absolute;
+z-index: 999999999;
+display: none;
+width:94%;
+height: auto;
+left: inherit;
+text-align: center;
+padding: 40px 0px;
+margin: 0 3%;
+background:url(../images/img-popup5.png) no-repeat center center;
+}
+
+.p5 {
+display: block;
+width: 100%;
+position: absolute;
+left: inherit;
+bottom: 14px;
+margin-left: auto;
+}
+.span-three {
+	left: 27%;
+}
+.span-two{
+right: 9%
+}
+
+@media screen and (max-width: 640px) {
+.container {
+	width: 100%;
+}	
+.bg-video{
+left: 0;
+margin-left: auto;
+}	
+.bg-video-top{
+	top: 0;
+}
+}
+@media screen and (max-width: 570px) {
+.img-popup2,
+.img-popup1,
+.img-popup3{
+	width: 80%;
+}
+.c-popup-1 .p2{
+	font-size: 11px;
+}
+.c-popup-1 .p1{
+	margin-top: 25px;
+	font-size: 14px;
+}
+.span-one {
+right: 27%;
+bottom: 11%;
+width: 22px;
+height: 33px;
+}	
+.span-five {
+    right: 33%;
+    bottom: 18%;
+    width: 25px;
+}
+.span-four {
+    right: 34%;
+    bottom: 6%;
+    width: 26px;
+    height: 25px;
+}
+
+}
+@media screen and (max-width: 560px) {
+
+.span-three {
+	left: 25%;
+}
+.span-two{
+right: 8%;
+}
+
+}
+@media screen and (max-width: 462px) {
+.list-theHawaii li{
+	width: 17%;
+}
+}
+@media screen and (max-width: 414px) {
+/*.a-boxhref-1, .a-boxhref-2 {
+width: 91%;
+}*/
+.c-popup-1 .p1{
+	font-size:17px;
+	}
+.c-popup-1 .p2{
+	font-size:13px;
+	}
+.p5 a {
+	font-size: 20px;
+	padding: 7px 65px;
+}	
+.span-two,
+.span-three,
+.span-one,
+.span-four,
+.span-five{
+	width: 20px;
+	height: 29px;
+}
+.span-one{
+	width: 16px;
+    height: 27px;
+    right: 27.4%;
+    bottom: 11%;
+}
+.span-four{
+	    width: 17px;
+    height: 25px;
+    right: 35%;
+    bottom: 5%;
+}
+.span-five{
+	width: 15px;
+    height: 25px;
+    right: 33.4%;
+    bottom: 18%;
+}
+.span-three {
+	left: 25%;
+}
+.p-text-2 img {
+	width: 29%;
+}
+
+
+.img-popup2,
+.img-popup1,
+.img-popup3{
+	width: 80%;
+}
+.c-popup-1 .p2{
+	font-size: 9px;
+}
+.c-popup-1 .p1{
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+}
+@media screen and (max-width: 375px) {
+.theHawaii h2 {
+	font-size: 19px;
+}
+.box p span{
+	margin-top:3px;
+}
+.a-boxhref-1 {
+margin-bottom: 3%;
+}
+
+}	
+@media screen and (max-width: 360px) {
+.list-theHawaii li span {
+top: -9px;
+
+width: 15px;
+height: 15px;
+font-size: 11px;
+}
+}	
+@media screen and (max-width: 320px) {
+.p-text-2 {
+    font-size: 12px;
+	}
+.theHawaii h2 {
+    font-size: 16px;
+	}
+.boxp2 {
+    font-size: 12px;
+	}	
+.box p.boxp1 {
+    font-size: 16px;
+}
+.box p.boxp1 small {
+    font-size: 10px;
+}
+
+
+
+
+}

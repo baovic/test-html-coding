@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <title>VRページ</title>
+</head>
+
+<body>
+  <script src="js/min/main.min.js"></script>
+  <script>
+    var data = {
+	"entryPoint": 1,
+	"spots": [
+		{
+			"altCubemaps": "data/crystalcove/01alt",
+			"cubemaps": "data/crystalcove/01",
+			"title": "data/crystalcove/01",
+			"no": 1
+		},
+		{
+			"altCubemaps": "data/crystalcove/02alt",
+			"cubemaps": "data/crystalcove/02",
+			"title": "data/crystalcove/02",
+			"no": 2
+		},
+		{
+			"altCubemaps": "data/crystalcove/03alt",
+			"cubemaps": "data/crystalcove/03",
+			"title": "data/crystalcove/03",
+			"no": 3
+		},
+		{
+			"altCubemaps": "data/crystalcove/04alt",
+			"cubemaps": "data/crystalcove/04",
+			"title": "data/crystalcove/04",
+			"no": 4
+		},
+		{
+			"altCubemaps": "data/crystalcove/05alt",
+			"cubemaps": "data/crystalcove/05",
+			"title": "data/crystalcove/05",
+			"no": 5
+		},
+		{
+			"altCubemaps": "data/crystalcove/06alt",
+			"cubemaps": "data/crystalcove/06",
+			"title": "data/crystalcove/06",
+			"no": 6
+		}
+	]
+};
+    
+    var app = new StreetView({
+      json: data,
+      indexUrl: '../../index.html'
+    });
+    app.init();
+  </script>
+</body>
+
+</html>

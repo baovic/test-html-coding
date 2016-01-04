@@ -1,0 +1,83 @@
+body {
+  background-color: #000000;
+  margin: 0;
+  overflow: hidden;
+  color: #ffffff; }
+
+#stats {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10; }
+
+#log {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 600px;
+  color: red;
+  font-size: 9px;
+  text-align: right;
+  z-index: 9; }
+
+#leftRenderer {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#rightRenderer {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.title {
+  background-image: url("../img/titleShadowBelt.png");
+  background-size: 100% 100%;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000000;
+  font-size: 16px;
+  position: absolute;
+  text-align: center;
+  padding: 10px 0;
+  overflow: hidden; }
+
+.closeButton {
+  z-index: 10;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  bottom: 100px;
+  right: 20px;
+  background: url(../img/closeButton.png) bottom left no-repeat;
+  background-size: 64px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .closeButton:focus {
+    outline: 0; }
+  .closeButton.on {
+    background-position: top left; }
+
+.nextButton {
+  z-index: 10;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  bottom: 100px;
+  right: 20px;
+  background: url(../img/nextButton.png) bottom left no-repeat;
+  background-size: 64px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .nextButton:focus {
+    outline: 0; }
+  .nextButton.on {
+    background-position: top left; }

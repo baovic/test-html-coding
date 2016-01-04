@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>【title】｜ゼクシィ</title>
+<meta name="description" content="【description】" />
+<meta name="keywords" content="【keywords】" />
+<link rel="canonical" href="【canonical】" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="apple-touch-icon" href="/smp/s/images/common/home.png" />
+<link rel="stylesheet" type="text/css" media="only screen" href="/smp/s/css/import.css" />
+<link type="text/css" rel="stylesheet" href="css/sp-file.css">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/s/common/js/common.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+$(function() {  
+	var $dir = location.href.split("/");  
+	var cdir = $dir[$dir.length -2];
+	var file_name;
+	switch(cdir){
+		case '0000000067' : file_name = 'standrews.html'; break;
+		case '0000000124' : file_name = 'crystalcove.html'; break;
+		case '0000000151' : file_name = 'stcatalina.html'; break;
+		case '0000000842' : file_name = 'moanachapel.html'; break;
+		case '1000000552' : file_name = 'kauichapel.html'; break;
+	
+	}
+	location.href= './src/' + file_name;
+});
+</script>
+
+<!-- SiteCatalyst code version: H.20.3.
+Copyright 1997-2009 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script type="text/javascript" src="/js/s_code.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+s.pageName = "VR";
+s.prop3 = "";
+s.prop4 = "";
+
+function removeSearchParameter(checkQuery) {
+	if (checkQuery.length < 2) {
+		return checkQuery;
+	}
+	var regQuery = new RegExp("[?&](tdfkn|area|tkch|ht|st|in|bg|x|y)=[^?&]*","g");
+	checkQuery = checkQuery.replace(regQuery,"");
+
+	if (checkQuery.length > 0) {
+		checkQuery = "?" + checkQuery.substring(1);
+	}
+	return checkQuery;
+}
+var reg = new RegExp("(client|shop|stationShop|shohin|plan|fair|fairClient)List");
+var pathname = location.pathname;
+if (pathname.match(reg)) {
+	s.pageURL = location.protocol+"//"+location.host+pathname + removeSearchParameter(location.search);
+}
+var referrer = document.referrer;
+if (referrer && referrer.match(reg)) {
+	var refQuery = "";
+	if (referrer.indexOf("?") != -1) {
+		refQuery = referrer.substring(referrer.indexOf("?"));
+		refQuery = removeSearchParameter(refQuery);
+	}
+	s.referrer = referrer.replace(/\?.*/,refQuery);
+}
+var s_code=s.t();if(s_code)document.write(s_code)
+//]]>
+</script>
+<!-- End SiteCatalyst code version: H.20.3. -->
+</body>
+</html>

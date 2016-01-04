@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead {border: 0;font-family: inherit;font-size: 100%;font-style: inherit;font-weight: inherit;margin: 0;outline: 0;padding: 0;}
+:focus {outline: 0;}
+
+ol, ul {list-style: none;}
+caption{font-weight: normal;text-align: left;}
+blockquote:before, blockquote:after,q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+
+a img {border: 0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+
+
+a{ text-decoration:none;}
+body {
+    color: #313945;
+	background:#fff;
+	-webkit-text-size-adjust: none;
+	font-size:14px;
+	position:relative;
+	font-family:"ヒラガナ角ゴ PronN W3","Hiragino Kaku Gothic ProN",Verdana,Roboto,"Droid Sans","遊ゴシック",YuGothic,"メイリオ",Meiryo,sans-serif;
+}
+header {
+    width:100%;
+	height:600px;
+	margin: 0 auto;
+	display:block;
+	min-width: 1280px;
+	background: url(../images/img1.png) repeat-x center center;
+	text-align: center; 
+}
+.pHeader{
+	display: inline-block;
+	width: 1240px;
+	margin: 0 auto;
+	height: auto;
+	text-align: right;
+	color: #f5e700;
+	font-size: 16px;
+	padding-right: 40px;
+}
+.pHeader a{
+	margin-top:30px;
+	display: inline-block;
+	color: #f5e700;
+	padding: 10px 12px;
+	border: 1px solid #f5e700;
+}
+.rowYellow{
+	background: #f5e700 url(../images/img2.png) no-repeat center center;
+	height: 498px;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	min-width: 1280px;
+}
+.rowYellow .content{
+	width: 1280px;
+	display: block;
+    margin: 0 auto;
+}
+.p1{
+	display: inline-block;
+	width: 100%;
+	margin-top: 135px;
+	margin-bottom: 17px;
+	text-align: center;
+}
+.p2{
+	font-size: 18px;
+	color: #2e2c26;
+	display: block;
+	line-height: 35px;
+}
+.rowW{
+	background: #fff;
+	height: auto;
+	min-width: 1280px;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 0 auto
+}
+.rowW .content{
+
+}
+.p3{
+	margin: 68px auto;
+	display: inline-block;
+	width: 100%;
+}
+.rowW .content ul.ulrowW1{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.rowW .content ul.ulrowW1 li{
+	display: inline-block;
+	margin: 0 10px;
+}
+.rowB{
+	background: #444444;
+	display: inline-block;
+	width: 100%;
+	margin: 75px auto 49px auto;
+	text-align: center;
+	min-width: 1280px;
+}
+.p4{
+	display: block;
+	height: 145px;
+	width: auto;
+	line-height: 145px;
+	font-size: 16px;
+	color: #fff;
+}
+.ulrowW2{
+	width: 1180px;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+.ulrowW2 li{
+	margin: 0 auto 50px auto;
+	display: inline-block;
+	width: 100%;
+	background: #efefef;
+	height: 280px;
+}
+
+.p5{
+	margin: 69px auto 25px auto;
+	display: block;
+}
+.p6{
+	color: #2e2c26;
+	font-size: 16px;
+	display: block;
+	line-height: 35px;
+	text-align: center;
+}
+.rowF{
+	height: auto;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	min-width: 1280px;
+}
+.rowF .contentF{
+	width: 960px;
+    display: block;
+    margin: 0 auto;
+}
+.contact{
+	display: inline-block;
+	width: 100%
+}
+.fieldset1{
+	display: block;
+	width: auto;
+	text-align: left;
+	border-bottom: 1px solid #e5e5e5;
+	margin: 20px 0;
+}
+.fieldset1 label{
+	font-size: 14px;
+	color: #225a7d;
+	text-align: left;
+	width: 231px;
+	display: inline-block;
+	height: 44px;
+	line-height: 44px;
+	margin-bottom: 25px;
+	float: left;
+}
+.fieldset1 label img{
+	float: right;
+	margin-top: 9px;
+	margin-right: 25px;
+}
+.input{
+	font-size: 14px;
+	color: #333;
+	height: 43px;
+	border: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width: 698px;
+	text-indent: 10px;
+	margin-bottom: 20px;
+	font-family: inherit;
+	float: left;
+	background: #eeeeee;
+}
+textarea{
+	width: 689px;
+	display: inline-block;
+	height: 144px;
+	border: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 20px 0 0 10px;
+	font-size: 18px;
+	color: #b9b9b9;
+	font-family: inherit;
+	background: #eeeeee;
+	margin-bottom: 20px;
+}
+.icon-nocheck{
+    background: url(../images/icon-nocheck.png) no-repeat left center;
+    width: auto;
+    height: 23px;
+    display: inline-block;
+    margin-right: 30px;
+    padding-left: 30px;
+    float: left;
+    margin-top: 10px;
+   
+}
+.active-check {
+    background: url(../images/icon-check.png) no-repeat left center;  
+} 
+b.text{
+    font-size: 14px;
+    color: #4a4a4a;
+    display: block;
+    width: auto;
+    float: left;
+    font-weight: normal;
+}
+
+.psubmit{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin: 74px 0 89px 0;
+}
+.submit{
+	border: none;
+	background: #f5dc00;
+	width: 495px;
+	height: 60px;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 16px;
+	color: #333;
+	line-height: 60px;
+}
+.contact p.error{
+	display: none;
+	color: #ff0000;
+	text-align: left;
+	margin: 0;
+	clear: both;
+    margin-left: 230px;
+}
+
+.contact input::-moz-placeholder,
+.contact input:-ms-input-placeholder,
+.contact input::-webkit-input-placeholder {
+ 	color: #b9b9b9;
+  	
+}
+footer{
+	background: #444444;
+	height: auto;
+	width:100%;
+	margin: 0 auto;
+	display:block;
+	min-width: 1280px;
+	text-align: center; 
+}
+.contentfooter{
+	width: 960px;
+	display: inline-block;
+	max-width: 0 auto;
+	text-align: center;
+}
+.logo{
+	display: inline-block;
+	margin: 25px auto 35px auto;
+	text-align: center;
+}
+.contentfooter ul{
+	margin: 0 auto 25px auto;
+	padding: 0 0 30px 0;
+	border-bottom: 1px solid #cccccc;
+	text-align: center;
+}
+.contentfooter ul li{
+	display: inline-block;
+	text-align: center;
+	margin: 0 20px;
+}
+.contentfooter ul li a{
+	color: #cccccc;
+	font-size: 15px;
+	font-weight: bold;
+}
+.copiright{
+	color: #fff;
+	font-size: 12px;
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.inputsmall{
+	width: 90px;
+}
+.line{
+	font-size: 14px;
+	color: #b9b9b9;
+	display: inline-block;
+	width: 32px;
+	height: 43px;
+	text-align: center;
+	float: left;
+	line-height: 43px;
+}
+.sendmail{
+	display: block;
+	color: #ff0000;
+	font-size: 14px;
+	text-align: center;
+	margin: 40px auto 20px auto;
+}
