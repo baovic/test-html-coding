@@ -113,7 +113,7 @@ header {
 	height: 145px;
 	width: auto;
 	line-height: 145px;
-	font-size: 16px;
+	font-size: 20px;
 	color: #fff;
 }
 .ulrowW2{
@@ -205,11 +205,12 @@ textarea{
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	padding: 20px 0 0 10px;
-	font-size: 18px;
+	font-size: 14px;
 	color: #b9b9b9;
 	font-family: inherit;
 	background: #eeeeee;
 	margin-bottom: 20px;
+	color: #333;
 }
 .icon-nocheck{
     background: url(../images/icon-nocheck.png) no-repeat left center;

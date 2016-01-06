@@ -15,7 +15,7 @@
   </head>
   <body>
         <header>
-             <p class="pHeader"><a href="">お問い合わせ</a></p>
+             
              <img src="images/textimg1.png">
         </header>
         <div class="rowYellow">
@@ -102,7 +102,7 @@
                           $headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
 
                           
-                          $to      = "info@livepass.jp";
+                          $to      = "webmaster@hcm-jinjer.com";
                           $subject = "Jinjer email";
                           $message ='
                             <p>お問い合わせの種類: '.$_POST['type'].'</p>
@@ -185,16 +185,16 @@
                         <fieldset class="fieldset1"> 
                             <label>メールアドレス<img src="images/red.png"></label>
                             <input name="email" id="email" type="text" placeholder="contact@jinjer.com" class="input input-phone" value=""> 
-                            <p id="error" class="error err-email">メールアドレスを入力してください1</p>
-                            <p id="error" class="error err-email-2">メールアドレスの形式が正しくありません2</p>
-                            <p id="error" class="error err-email-3">error different email3 </p>
+                            <p id="error" class="error err-email">メールアドレスを入力してください</p>
+                            <p id="error" class="error err-email-2">メールアドレスの形式が正しくありません</p>
+                            <p id="error" class="error err-email-3">error different email </p>
                         </fieldset>  
 
                         <fieldset class="fieldset1"> 
                             <label>メールアドレス（確認）<img src="images/red.png"></label>
                             <input name="email-confirm" id="email-confirm" type="text" placeholder="contact@jinjer.com" class="input input-phone" value=""> 
-                            <p id="error" class="error err-email-confirm">メールアドレスを入力してください1</p>
-                            <p id="error" class="error err-email-confirm-2">メールアドレスの形式が正しくありません2</p>
+                            <p id="error" class="error err-email-confirm">メールアドレスを入力してください</p>
+                            <p id="error" class="error err-email-confirm-2">メールアドレスの形式が正しくありません</p>
                         </fieldset>  
 
                         <fieldset class="fieldset1"> 
@@ -215,9 +215,9 @@
     <div class="contentfooter">
         <p class="logo"><img src="images/logo.png"></p>
         <ul>
-            <li><a href="">運営会社</a></li>
-            <li><a href="">お問い合わせ</a></li>
-            <li><a href="">PrivacyPolicy</a></li>
+            <li><a href="http://www.neo-career.co.jp/profile/about_us.html">運営会社</a></li>
+           
+            <li><a href="https://hcm-jinjer.com/privacy/">PrivacyPolicy</a></li>
         </ul>
         <p class="copiright">Copyright © 2015 NeoCareer Co., LTD. All Rights Reserved.</p>
     </div>
