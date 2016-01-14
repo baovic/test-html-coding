@@ -43,6 +43,8 @@ header{
     height: auto;
     margin-top: 6px;
     display: none;
+    position: relative;
+    z-index: 999999999999;
 }
 .menuSp li{
     border-bottom: 1px solid #5e5d5c;
