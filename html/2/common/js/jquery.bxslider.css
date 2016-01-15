@@ -43,7 +43,7 @@
 .bx-wrapper .bx-controls-auto {
 	position: absolute;
 	bottom: 29px;
-	
+	z-index: 999;
 	right: 50%;
 
 }
