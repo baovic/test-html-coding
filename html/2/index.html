@@ -47,36 +47,15 @@
     </script>
   </head>
   <body>
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <a href="#"><img src="common/imgs/logo.png" alt ></a>
-                    <p>名刺印刷、箱印刷、激安価格でご提供</p>
-                </div>
-                <div class="contact-h show-pc">
-                    <p>0120-25-4191</p>
-                    <a href="#"><i class="fa fa-envelope"></i>お問い合わせ</a>
-                </div>
-            </div>
-            <!-- menu for SP -->
-            <img src="common/imgs/sp/icon-menu.png" class="iconMenusp show-sp">
-            <ul class="menuSp">
-                <li><a href="">ホーム</a></li>
-                <li class="liSub"><a href="">事業内容</a>
-                    <ul class="sub">
-                            <li><a href="#">test</a></li>
-                            <li><a href="#">test</a></li>
-                            <li><a href="#">test</a></li>
-                            <li><a href="#">test</a></li>
-                            <li><a href="#">test</a></li>
-                    </ul>
-                </li>
-                <li><a href="">企業情報</a></li>
-                <li><a href="">主要取引先</a></li>
-                <li><a href="">よくあるご質問</a></li>
-                
-            </ul>
-            <!-- end menu for sp -->
+        <header id="header">
+            <script type="text/javascript">
+                $(document).ready(function(){ 
+                  $.get("header.html", function(data) {
+                    $("#header").html(data);
+                  });
+                }); 
+            </script>
+            
         </header>
         <!--end header -->
         <!-- menu for PC -->
