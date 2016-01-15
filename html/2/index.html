@@ -54,21 +54,19 @@
                     $("#header").html(data);
                   });
                 }); 
-            </script>
-            
+            </script>            
         </header>
         <!--end header -->
         <!-- menu for PC -->
-        <nav class="show-pc">
-                <ul class="menuPC">
-                    <li><a class="active" href="#">ホーム</a></li>
-                    <li><a href="#">物件情報</a></li>
-                    <li><a href="#">企業情報</a></li>
-                    <li><a href="#">事業案内</a></li>
-                    <li><a href="#">不動産経営とは</a></li>
-                    <li><a href="#">用地募集</a></li>
-                </ul>
-            </nav><!--end nav -->
+        <nav id="header-nav-pc" class="show-pc">
+                <script type="text/javascript">
+                    $(document).ready(function(){ 
+                      $.get("nav-pc.html", function(data) {
+                        $("#header-nav-pc").html(data);
+                      });
+                    }); 
+                </script>      
+        </nav><!--end nav -->
         <div class="banner">
                 <div class="slider">      
                     <ul class="bxslider">       
@@ -162,37 +160,15 @@
             </div>
             <!-- end for SP -->
         </div>
-        <footer>
-            <div class="container">
-                <span class="topPgae">
-                    <img src="common/imgs/top-page.png" class="show-pc">
-                    <img src="common/imgs/sp/top-page.png" class="show-sp">
-                </span>
-                <ul class="menufooter">
-                    <li class="liLar"><a href="#" class="aLar">事業内容</a>
-                        <ul class="show-pc">
-                            <li><a href="#">名刺印刷</a></li>
-                            <li><a href="#">紙箱印刷</a></li>
-                            <li><a href="#">デザイン</a></li>
-                        </ul>    
-                    </li>
-                    <li class="liLar">
-                        <a href="#" class="aLar aLarsp">企業情報</a>
-                        <a href="#" class="aLar aLarsp">主要取引先</a>
-                        <a href="#" class="aLar aLarsp">よくあるご質問</a>
-                    <li class="liLar">
-                        <a href="#" class="aLar aLarsp">お問い合わせ</a>
-                        <a href="#" class="aLar aLar2">プライバシーポリシー</a>
-                        
-                    </li>
-                </ul>
-                <!--end menufooter -->
-                <div class="infoF show-pc">
-                    <a href=""><img src="common/imgs/logo-footer.png" alt=""></a>
-                    <p>〒104-0061<br>東京都中央区銀座1-19-10TNBビル4F</p>
-                </div>
-            </div>
-            <p class="copiright">Copyright (C) 2015 G・E・T design Co.Ltd. All Rights Reserved.</p>
+        <footer id="footer">
+            <script type="text/javascript">
+                $(document).ready(function(){ 
+                  $.get("footer.html", function(data) {
+                    $("#footer").html(data);
+                  });
+                }); 
+            </script>      
+            
         </footer>
  </body>
 </html>
