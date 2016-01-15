@@ -26,13 +26,15 @@
     $(document).ready(function(){
             $('.bxslider').bxSlider({
                 useCSS: false,
-                mode: 'fade'
+                mode: 'fade',
+                captions: true
              });
             if(screen.width <= 736){
                 $('.bxslider').bxSlider({
-                    useCSS: false,
-                    mode: 'horizontal'
-                 }); 
+                     useCSS: false,
+                     mode: 'horizontal',
+                     captions: true
+                  }); 
             }
         });
     </script>
