@@ -1,0 +1,647 @@
+@media screen and (max-width: 736px) {
+*{
+		box-sizing: border-box;
+	}
+.show-pc{
+	display:none !important;
+	}
+.show-sp{
+	display:block !important;
+	}
+header,
+footer,
+nav,
+.BoxPrint,
+.banner{
+	min-width: 0;
+}
+.container{
+    width: 100%
+}
+header{
+    background: #fff;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    position: relative;
+}
+.logo {
+    margin-top: 7px;
+    margin-left: 3%;
+}
+.logo img{
+    float: none;
+}
+.logo p{
+    float: none;
+    display: block;
+}
+.iconMenusp{
+    position: absolute;
+    right: 3%;
+    top: 0;
+    width: 48px;
+}
+/*-------------menu top--------------*/
+
+.menuSp{
+    background: #3d3d3d;
+    width: 100%;
+    height: auto;
+    margin-top: 6px;
+    display: none;
+}
+.menuSp li{
+    border-bottom: 1px solid #5e5d5c;
+    width:auto;
+    display: block;
+    height: auto;
+    text-align: left;
+    padding: 10px 2.5%; 
+}
+.menuSp li.liSub{
+    background: url(../imgs/sp/iconMenusub.png) no-repeat right 13px;
+}
+.menuSp li.liSub.active{
+    background: url(../imgs/sp/iconMenusubActive.png) no-repeat right 13px;
+}
+.menuSp li a{
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+}
+.menuSp li .sub{
+    display: none;
+    width: 100%;
+    height: auto;
+}
+/*.menu-top-sp ul li.dichvu:hover .sub,
+.menu-top-sp ul li.tuvan:hover .sub,
+.menu-top-sp ul li.tintucxe:hover .sub,
+.menu-top-sp ul li.kienthuc:hover .sub {
+    display: block;
+}*/
+.menuSp li .sub li{
+    border-bottom: 1px dotted #5e5d5c;
+    padding: 7px 0 7px 5%;
+    width: auto;
+    display: block;
+    
+}
+.menuSp li .sub li a{
+    font-size: 12px;
+}
+.menuSp li .sub li:last-child{
+    border: none;
+    padding-bottom: 0;
+}
+/*-----------slide banner----------*/
+.slider {
+    width: 100%;
+    height: auto;
+}
+.slider .bx-wrapper .bx-viewport {
+    height: auto !important;
+    width: auto !important
+}
+.bx-wrapper img {
+    max-width: 100%;
+    display: block;
+}
+.banner {
+    height: auto;
+    margin-bottom: 0px;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 9px !important;
+    width: 100%;
+    right: inherit !important;;
+    margin-right: auto !important;
+}
+.bxslider li a{
+    left: 41px;
+    bottom: 8%;
+}
+.bx-wrapper img.more-banner{
+    max-width: 136px;
+    width: 60%;
+}
+.bx-controls-direction{
+    display: none;
+}
+/*--------list3-------*/
+.sectionIndex3{
+    margin-top: -5px;
+}
+.list33 {
+    margin: 20px 2.5% 30px 2.5%;
+    width: 95%;
+}
+.list33 li {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    float: none;
+    vertical-align: top;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+.list33 li a{
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 100%;
+    height: 177px;
+    width: 160px;
+    text-align: center;
+}
+.list33 li a img {
+    vertical-align: middle;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+.list33 li p {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    line-height: 18px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 71%;
+}
+
+.list3{
+   margin: 0 auto 45px auto;
+    padding: 0 2.5% 15px 2.5%;
+    width: auto;
+    display: block;
+    background: #f0f0f0;
+}
+.list3 li{
+    width: 100%;
+    height: auto;
+    margin: 25px 0 0 0 !important;
+    background: #fff;
+    float: none;
+}
+.list3 li .img-1{
+    max-width: 227px;
+    height: auto;
+    float: left;
+   width: 100%;
+}
+.list3 li p{
+    overflow: hidden;
+    width: 65%;
+    display: block;
+    font-size: 16px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 0;
+    padding-right: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+.list3 li p a{
+    float: left;
+    display: block;
+    width: 100%;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+.list3 li a.a{
+    width: 227px;
+    height: auto;
+}
+.sectionIndex{
+    padding: 0 2.5% 50px 2.5%;
+    width: auto;
+    display: block;
+    float: none;
+}
+.asideIndex{
+    padding: 0 2.5% 20px 2.5%;
+    width: auto;
+    display: block;
+    float: none;
+}
+.latest-listing li img{
+    width: 100%;
+}
+.h2Left{
+    margin: 0 2.5%;
+}
+/*scroll*/
+#scrollbar1 .scrollbar{
+    display: none;
+}
+#scrollbar1 .viewport {
+    width: 100%;
+    height: auto;
+    overflow: inherit;
+}
+#scrollbar1 .overview {
+    position: inherit;
+    padding: 0;
+}
+/*--------footer-------*/
+footer{
+   border-top:none;
+   background: #3472b7;
+   height: auto;
+   width: 100%;
+   display: inline-block;
+   margin-top: 30px;
+}
+.menufooter{
+    margin: 0px 2.5%;
+    padding: 0;
+    display: block;
+    float: none;
+}
+.menufooter .liLar{
+    background: url(../imgs/sp/line-menu.png) repeat-x left top;
+    width: 100%;
+    height: auto;
+    margin-top:0px;
+    padding: 15px 0 12px 0;
+}
+.menufooter .liLar a{
+     color: #f5f5f5;
+}
+.menufooter .liLar:nth-child(5n){
+    padding: 15px 0 0 0;
+}
+.menufooter .liLar .aLar {
+    background: url(../imgs/footer-bullet-1.png) no-repeat 10px center;
+    padding-left: 30px;
+}
+
+.menufooter .liLar .aLar2{
+    background: url(../imgs/sp/line-menu.png) no-repeat left top;
+    padding-left: 8px;
+    float: left;
+    margin-top: 0;
+}
+.menufooter .liLar .aLar2:last-child{
+    background: none;
+}
+.menufooter .liLar .aLarsp{
+    background: url(../imgs/footer-bullet-1.png) no-repeat 10px 4px, url(../imgs/sp/line-menu.png) repeat-x left bottom;
+    padding-bottom: 13px;
+    margin-bottom: 13px;
+
+}
+.menufooter .liLar .aLarsp:last-child{
+    background: url(../imgs/footer-bullet-1.png) no-repeat 10px 4px;
+     padding-bottom: 0;
+    margin-bottom: 0;
+}
+.topPgae{
+    width: 100%;
+    height: 42px;
+    text-align: center;
+    margin: 0 auto;
+    background: #002964;
+    position: relative;
+    right: auto;
+    bottom: auto;
+    top: 0;
+    display: inline-block;
+}
+.topPgae img{
+    max-width: 100%;
+    width: 200px;
+    display: block;
+    text-align: center;
+    margin: 14px auto 0 auto;
+}
+.copiright {
+    margin: 0px auto;
+    padding: 15px 0 11px 0;
+}
+/*--------infomation-------*/
+.infomation{
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(190,190,190,1);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(190,190,190,1);
+    box-shadow: 0px 0px 5px 2px rgba(190,190,190,1);
+    width: auto;
+    display: block;
+    margin: 2px 2.5% 0 2.5%;
+    height: auto;
+    
+    padding: 15px;
+    text-align: left;
+}
+.infomation .p1{
+    color: #2a2a2a;
+    font-size: 16px;
+    display: inline-block;
+    text-align: left;
+    width: 295px;
+    margin-bottom: 10px;
+}
+.infomation .p2{
+    background: url(../imgs/logo-phone.png) no-repeat left center;
+    font-size: 30px;
+    color: #3472b7;
+    padding-left: 50px;
+    display: inline-block;
+    width: 295px;
+    text-align: left;
+    font-weight: bold;
+     margin-bottom: 20px;
+}
+.infomation .p3{
+    color: #2a2a2a;
+    font-size: 15px;
+    width: 75%;
+     display: inline-block;
+    text-align: center;
+     margin-bottom: 20px;
+}
+.infomation .p4{
+    background: #3472b7;
+    height: auto;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    height: 41px;
+    line-height: 43px;
+}
+.infomation .p4 a{
+    color: #fff;
+    font-size: 20px; 
+}
+.infomation .p4 i{
+    font-size: 28px;
+    margin-right: 15px;
+}
+/*---------002-----------*/
+.titlePage{
+    margin-bottom: 20px;
+}
+.titlePage p {
+    width: 97.5%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 0 0 2.5%;
+    
+}
+.containerPage{
+    padding: 0;
+    width: auto;
+    display: block;
+}
+.sectionPage {
+    float: none;
+    width: 100%;
+    display: inline-block;
+    height: auto;
+}
+.h3Right {
+    font-size: 18.5px;
+    padding: 0 0 20px 0;
+    margin: 0 2.5%;
+    margin-bottom: 20px;
+}
+h4 {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin: 0px 2.5% 20px 2.5%;
+    width: auto;
+    display: block;
+}
+dl {
+    width: auto;
+    height: auto;
+    margin: 0 2.5% 20px 2.5%;
+}
+dl dd {
+    padding-bottom: 15px;
+    width: calc(100% + 40px);
+    margin-bottom: 15px;
+    background: none;
+}
+.business {
+    margin: -6px auto 0 auto;
+    padding: 0;
+    text-align: center;
+}
+.business li {
+    display: inline-block;
+    float: none;
+    text-align: center;
+    max-width: 313px;
+    width: 47%;
+    height: auto;
+    margin: 0 auto;
+    vertical-align: top;
+}
+.business li a {
+    background: url(../imgs/002/img-1.png) no-repeat left top;
+    max-width: 313px !important;
+    width: 100% !important;
+    background-size: 100% !important;
+    height: auto;
+    line-height: inherit;
+    padding: 16% 0;
+    font-size: 20px;
+}
+.business li:last-child{
+    text-align: left;
+    display: block;
+    float: left;
+    margin-left: 2.5%;
+}
+.containerBoxPrint{
+    margin: 0 3%;
+    width: 94%;
+}
+.uPrint li {
+    max-width: 294px;
+    margin: 15px 3% 0 3% !important;
+    width: 43%;
+
+}
+.uPrintL li {
+    max-width: 294px;
+    margin: 25px 3% 0px 3% !important;
+    width: 43%;
+
+}
+.uPrint li img{
+    width: 100%;
+}
+.uPrint li p a{
+    float: right;
+    margin-right: 5%;
+    width: 45%;
+    max-width: 96px;
+}
+.uPrint li p a img{
+    width: 100%;
+}
+.lilast{
+    float: none;
+}
+.pt3{
+    margin: 15px auto;
+}
+
+}
+@media screen and (max-width: 640px) {
+
+
+}
+@media screen and (max-width: 568px) {
+
+
+}
+@media screen and (max-width: 513px) {
+
+}
+@media screen and (max-width: 480px) {
+.business li {
+    display: inline-block;
+    float: none;
+    text-align: center;
+    max-width: 313px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    vertical-align: top;
+}
+.business li a{
+    padding: 0;
+    line-height: 124px;
+}
+.business li:last-child{
+    display: inline-block;
+    float: none;
+    margin-left: auto;
+}
+}
+
+@media screen and (max-width : 414px){
+   
+.list3 li{
+    margin: 15px 0 0 0 !important;
+}    
+.list3 li .img-1{
+    width: 180px;
+}
+.list3 li p{
+    font-size: 13px;
+    margin-top: 26px;
+}
+.list3 li p a{
+    margin: 0 0 10px 0;
+}
+.notice li{
+        font-size: 13px;
+    }  
+.infomation .p1{
+    font-size: 20px;
+    width: 275px;
+    margin-bottom: 15px;
+}
+.infomation .p2{
+    font-size: 27px;
+    width: 275px;
+    margin-bottom: 15px;
+}
+.infomation .p3{
+    width: 275px;
+    margin-bottom: 15px;
+}   
+.infomation .p4 img {
+    width: 60%;
+}
+.tblist18 tr td:first-child {
+   /* width: 100px;*/
+}
+.propertyLocation2 {
+    max-width: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+.divsp{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.divsp:last-child{
+    margin-bottom: 0;
+}
+.divsp2 input{
+    margin-bottom: 10px;
+}
+.magGin1{
+    display: block;
+    width: auto;
+    margin-bottom: 5px;
+}
+.magGin1:last-child,
+.divsp2 input:last-child{
+    margin-bottom: 0;
+}
+.input320{
+  display: inline-block;
+  margin-bottom: 10px; 
+}
+.nearestStationNumber{
+    width: 41%;
+}
+/*new*/
+.uPrint li {
+    max-width: 294px;
+    margin: 20px 18px !important;
+    width: 76%;
+}
+}
+   
+@media screen and (max-width: 349px) {
+	
+}
+
+@media screen and (max-width: 375px) {
+.notice li{
+        font-size: 12px;
+    } 	
+}
+@media screen and (max-width: 374px) {
+	
+}
+@media screen and (max-width: 360px) {
+	
+}
+
+@media screen and (max-width : 353px){
+}
+@media screen and (max-width : 340px){
+	
+
+}
+@media screen and (max-width : 332px){
+	
+}
+@media screen and (max-width: 320px) {
+	.notice li{
+        font-size: 10px;
+    }
+   
+
+   /*new*/
+   .list33 li p {
+        width: 62%;
+    }
+}
+
+
+
