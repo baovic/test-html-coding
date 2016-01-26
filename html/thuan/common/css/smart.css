@@ -372,7 +372,8 @@ a.asharepage2{
     padding-left: 40%;
     }
     a.ashare, .submit{
-        font-size: 18px;
+        font-size: 17px;
+        width: 48%;
     }
 }
 
