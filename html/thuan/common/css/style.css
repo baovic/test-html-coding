@@ -211,6 +211,8 @@ a.ashare{
     padding: 0 10px;
     font-size: 20px;
     -webkit-appearance: none;
+ border-radius: 0;
+ box-sizing: border-box; 
 }
 .s-match li:nth-child(2){
     margin: 0 40px;
@@ -260,11 +262,12 @@ a.ashare{
     height: 38px;
     text-indent: 10px;
     -webkit-appearance: none;
+ border-radius: 0;
+ box-sizing: border-box; 
     -moz-appearance: none;
     appearance: none;
     line-height: 38px;
     background: url(../imgs/icon-bullet.png) no-repeat right center #bacee2;
-    -webkit-appearance: none;
 }
 .submit{
     color: #fff;
@@ -275,7 +278,9 @@ a.ashare{
     font-size: 20px;
     background: #0070d6;
     display: inline-block;
-   
+    -webkit-appearance: none;
+ border-radius: 0;
+ box-sizing: border-box; 
     border: none;
     cursor: pointer;
 }
@@ -376,6 +381,8 @@ input.password{
     color: #fff;
     font-size: 15px;
     -webkit-appearance: none;
+ border-radius: 0;
+ box-sizing: border-box; 
 }
 .submitF{
     color: #fff;
