@@ -210,6 +210,7 @@ a.ashare{
     display: inline-block;
     padding: 0 10px;
     font-size: 20px;
+    -webkit-appearance: none;
 }
 .s-match li:nth-child(2){
     margin: 0 40px;
@@ -263,6 +264,7 @@ a.ashare{
     appearance: none;
     line-height: 38px;
     background: url(../imgs/icon-bullet.png) no-repeat right center #bacee2;
+    -webkit-appearance: none;
 }
 .submit{
     color: #fff;
@@ -373,6 +375,7 @@ input.password{
     text-indent: 10px;
     color: #fff;
     font-size: 15px;
+    -webkit-appearance: none;
 }
 .submitF{
     color: #fff;
