@@ -123,6 +123,11 @@ header{
 .bxslider li a{
     left: 41px;
     bottom: 8%;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    padding: 0.6% 3%;
+    line-height: inherit;
 }
 .bx-wrapper img.more-banner{
     max-width: 136px;
@@ -264,11 +269,15 @@ footer{
     float: none;
 }
 .menufooter .liLar{
-    background: url(../imgs/sp/line-menu.png) repeat-x left top;
+    border-bottom: 2px solid #00387d;
+    border-left: 0;
     width: 100%;
     height: auto;
     margin-top:0px;
     padding: 15px 0 12px 0;
+}
+.menufooter .liLar:first-child{
+     border-bottom: 2px solid #00387d;
 }
 .menufooter .liLar a{
      color: #f5f5f5;
@@ -289,17 +298,22 @@ footer{
 }
 .menufooter .liLar .aLar2:last-child{
     background: none;
+     border-bottom: 0;
+}
+.menufooter .liLar:last-child{
+    border-bottom: 0;
 }
 .menufooter .liLar .aLarsp{
-    background: url(../imgs/footer-bullet-1.png) no-repeat 10px 4px, url(../imgs/sp/line-menu.png) repeat-x left bottom;
+    background: url(../imgs/footer-bullet-1.png) no-repeat 10px 4px;
     padding-bottom: 13px;
     margin-bottom: 13px;
-
+    border-bottom: 2px solid #00387d;
 }
 .menufooter .liLar .aLarsp:last-child{
     background: url(../imgs/footer-bullet-1.png) no-repeat 10px 4px;
      padding-bottom: 0;
     margin-bottom: 0;
+    border-bottom: 0;
 }
 .topPgae{
     width: 100%;
@@ -492,7 +506,10 @@ dl dd {
 .pt3{
     margin: 15px auto;
 }
-
+.bx-wrapper img{
+    width: 100%;
+    height: auto;
+}
 }
 @media screen and (max-width: 640px) {
 
