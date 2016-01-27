@@ -35,39 +35,46 @@
                     <p class="p1">Drag the logo of each club below to predict the quarter finals.</p>
             </div>
             <!-- NowMake -->
-            <div class="match match2" id="multi" style="text-align:center">
-                <div class="flag">
-                    <div class="layer tile tile1" data-force="30">
-                        <div class="tile__list tile_list1">
-                            <img src="common/imgs/flag-1.png"/>
-                            <img src="common/imgs/flag-2.png"/>
-                            <img src="common/imgs/flag-3.png"/>
-                            <img src="common/imgs/flag-4.png"/>
-                            <img src="common/imgs/flag-5.png"/>
-                            <img src="common/imgs/flag-6.png"/>
-                            <img src="common/imgs/flag-7.png"/>
-                            <img src="common/imgs/flag-8.png"/>
+            <div class="match match2" style="text-align:center">
+                <ul id="list1" class="ui-sortable">
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-1.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-2.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-3.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-4.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-5.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-6.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-7.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-8.png"/></li>
+                </ul>
+                <form class="fMacth">
+                    <div class="bgMatch">
+                        <div class="list2sub">
+                            <ul id="list2" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list3" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list4" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list5" class="list2 ui-sortable">
+                            </ul>
+                        </div>
+                        <div class="list3sub">
+                            <ul id="list6" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list7" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list8" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list9" class="list2 ui-sortable">
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <!-- flag -->
-                <form>
-                    <div class="flagMatch">
-                        <div class="layer tile tile2" data-force="25">
-                            <div class="tile__list tile_list2">
-                                
-                            </div>
-                        </div>
-                        <p class="submitP">
+                    <p class="submitP">
                             <a class="ashare asharepage2" href="">Share</a>
                             <input type="submit" value="Submit" class="submit submitpage2">
-                        </p>
-                    </div>
+                    </p>
                 </form>
-               
-               
-                    
-                
+                <!-- flag -->
                 <div class="navFooter show-sp">
                     <span class="login down">Login</span>
                 </div>
@@ -100,8 +107,130 @@
                 </form>
             </div>
         </div>
-        <script src="common/js/Sortable.js"></script>
-        <script src="common/js/app.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script>
+(function ($) {
+    $('#list1').sortable({ 
+        connectWith: 'ul',
+        receive: function (ev, ui) {
+            if (ui.item.hasClass('number'))
+                $('#list1 li').removeClass("number");
+        }
+    });
+    
+    $('#list2').sortable({
+        connectWith: 'ul',
+        receive: function (ev, ui) {
+            if (ui.item.hasClass('number')){
+                ui.sender.sortable('cancel');
+            }    
+            else{
+                $('#list2 li').addClass("number");
+            }
+            if($("#list2 li").length > 1){
+                ui.sender.sortable('cancel');
+            }
+        }
+    });
+    $('#list3').sortable({
+        connectWith: 'ul',
+        receive: function (ev, ui) {
+            if (ui.item.hasClass('number')){
+                ui.sender.sortable('cancel');
+            }
+            else{
+                $('#list3 li').addClass("number");
+            }
+            if($("#list3 li").length > 1){
+                ui.sender.sortable('cancel');
+            }
+        }
+    });
+    $('#list4').sortable({
+        connectWith: 'ul',
+        receive: function (ev, ui) {
+            if (ui.item.hasClass('number')){
+                ui.sender.sortable('cancel');
+            }
+            else{
+                $('#list4 li').addClass("number");
+            }
+            if($("#list4 li").length > 1){
+                ui.sender.sortable('cancel');
+            }
+        }
+    });
+    
+    $('#list5').sortable({
+        connectWith: 'ul',
+        receive: function (ev, ui) {
+            if (ui.item.hasClass('number')){
+                ui.sender.sortable('cancel');
+            }
+             else{
+                $('#list5 li').addClass("number");
+            }
+            if($("#list5 li").length > 1){
+                ui.sender.sortable('cancel');
+            }
+        }
+    });
+    $('#list6').sortable({
+        connectWith: 'ul',
+        receive: function (ev, ui) {
+            if (ui.item.hasClass('number')){
+                ui.sender.sortable('cancel');
+            } else{
+                $('#list6 li').addClass("number");
+            }
+            if($("#list6 li").length > 1){
+                ui.sender.sortable('cancel');
+            }
+        }
+    });
+    $('#list7').sortable({
+        connectWith: 'ul',
+        receive: function (ev, ui) {
+            if (ui.item.hasClass('number')){
+                ui.sender.sortable('cancel');
+            }else{
+                $('#list7 li').addClass("number");
+            }
+            if($("#list7 li").length > 1){
+                ui.sender.sortable('cancel');
+            }
+        }
+    });
+    $('#list8').sortable({
+        connectWith: 'ul',
+        receive: function (ev, ui) {
+            if (ui.item.hasClass('number')){
+                ui.sender.sortable('cancel');
+            }else{
+                $('#list8 li').addClass("number");
+            }
+            if($("#list8 li").length > 1){
+                ui.sender.sortable('cancel');
+            }
+        }
+    });
+    $('#list9').sortable({
+        connectWith: 'ul',
+        receive: function (ev, ui) {
+            if (ui.item.hasClass('number')){
+                ui.sender.sortable('cancel');
+             }
+             else{
+                $('#list9 li').addClass("number");
+            }   
+            if($("#list9 li").length > 1){
+                ui.sender.sortable('cancel');
+            }
+        }
+    });
+}(jQuery));
+</script>
  </body>
 </html>
 

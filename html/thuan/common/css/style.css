@@ -533,3 +533,72 @@ fieldset.rfieldset {
 .submitpage2{
     margin: 0 36px;
 }
+/*flag*/
+ul#list1{
+    width: 100%;
+    min-width: 320px;
+    padding: 0;
+    margin: 50px auto;
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    min-height: 80px;
+    vertical-align: top;
+    overflow: hidden;
+}
+ul#list1 li{
+    margin: 0 18px;
+    display: inline-block;
+}
+.fMacth{
+    display: block;
+    text-align: center;
+    margin:auto 0;
+    position: relative;
+}
+.bgMatch{
+    background: url(../imgs/bg-match.png) no-repeat left center;
+   
+    display: inline-block;
+    width: 317px;
+    height: 426px;
+    text-align: center;
+    margin: 0 auto;
+}
+.list2sub,
+.list3sub{
+    width: 106px;
+    height: 101px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: left;
+}
+.list3sub{
+    float: right;
+}
+.list2sub ul,
+.list3sub ul{
+    margin: 0 0 7px 0;
+    padding: 0;
+    vertical-align: top;
+    width: 100%;
+
+    list-style-type: none;
+    height: 101px;
+}
+.list2sub ul li,
+.list3sub ul li{
+    margin: 0;
+    padding: 0;
+    width: 106px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 101px;
+}
+.list2sub ul li img,
+.list3sub ul li img{
+    vertical-align: middle;
+    margin: 0 auto;
+}
