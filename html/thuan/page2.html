@@ -110,139 +110,24 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <script>
-(function ($) {
-    $('#list1 li').removeClass("number");
-    $('#list1').sortable({ 
-        cursor: 'move',
-        connectWith: 'ul',
-        receive: function (ev, ui) {
-            if (ui.item.hasClass('number'))
-                $('#list1 li').removeClass("number");
+$('.ui-sortable').sortable({
+    connectWith: '.ui-sortable',
+    tolerance: 'pointer'
+});
+$('.ui-sortable li').mousedown(function() {
+    $('.ui-sortable').not($(this).parent()).each(function() {
+        if ($(this).find('li').length >= 1) {
+            if ($(this).attr('id') != "list1" ) {
+                $(this).sortable('disable');
+            }
         }
     });
-    
-    $('#list2').sortable({
-        connectWith: 'ul',
-        receive: function (ev, ui) {
-            if($("#list2 li").length > 1){
-                ui.sender.sortable('cancel');
-            }
-            if (ui.item.hasClass('number')){
-                ui.sender.sortable('cancel');
-            }    
-            else{
-                $('#list2 li').addClass("number");
-            }
-            
-        }
+});
+$('.ui-sortable li').mouseup(function() {
+    $('.ui-sortable').each(function() {
+        $(this).sortable('enable');
     });
-    $('#list3').sortable({
-        connectWith: 'ul',
-        receive: function (ev, ui) {
-            if($("#list3 li").length > 1){
-                ui.sender.sortable('cancel');
-            }
-            if (ui.item.hasClass('number')){
-                ui.sender.sortable('cancel');
-            }
-            else{
-                $('#list3 li').addClass("number");
-            }
-            
-        }
-    });
-    $('#list4').sortable({
-        connectWith: 'ul',
-        receive: function (ev, ui) {
-            if($("#list4 li").length > 1){
-                ui.sender.sortable('cancel');
-            }
-            if (ui.item.hasClass('number')){
-                ui.sender.sortable('cancel');
-            }
-            else{
-                $('#list4 li').addClass("number");
-            }
-            
-        }
-    });
-    
-    $('#list5').sortable({
-        connectWith: 'ul',
-        receive: function (ev, ui) {
-            if($("#list5 li").length > 1){
-                ui.sender.sortable('cancel');
-            }
-            if (ui.item.hasClass('number')){
-                ui.sender.sortable('cancel');
-            }
-             else{
-                $('#list5 li').addClass("number");
-            }
-            
-        }
-    });
-    $('#list6').sortable({
-        connectWith: 'ul',
-        receive: function (ev, ui) {
-            if($("#list6 li").length > 1){
-                ui.sender.sortable('cancel');
-            }
-            if (ui.item.hasClass('number')){
-                ui.sender.sortable('cancel');
-            } else{
-                $('#list6 li').addClass("number");
-            }
-            
-        }
-    });
-    $('#list7').sortable({
-        connectWith: 'ul',
-        receive: function (ev, ui) {
-            if($("#list7 li").length > 1){
-                ui.sender.sortable('cancel');
-            }
-            if (ui.item.hasClass('number')){
-                ui.sender.sortable('cancel');
-            }else{
-                $('#list7 li').addClass("number");
-            }
-            
-        }
-    });
-    $('#list8').sortable({
-        connectWith: 'ul',
-        receive: function (ev, ui) {
-            if($("#list8 li").length > 1){
-                ui.sender.sortable('cancel');
-            }
-            if (ui.item.hasClass('number')){
-                ui.sender.sortable('cancel');
-            }else{
-                $('#list8 li').addClass("number");
-            }
-            
-        }
-    });
-    $('#list9').sortable({
-        connectWith: 'ul',
-        receive: function (ev, ui) {
-            if($("#list9 li").length > 1){
-                ui.sender.sortable('cancel');
-            }
-            if (ui.item.hasClass('number')){
-                ui.sender.sortable('cancel');
-             }
-             else{
-                $('#list9 li').addClass("number");
-            }   
-            
-        }
-    });
-}(jQuery));
-
-
-
+});
 </script>
 <!--Sortable for sp-->
 <script src="common/js/Sortable.js"></script>
@@ -299,8 +184,6 @@
     [].forEach.call(byId('list12').getElementsByClassName('ui-sortable'), function (el){
         Sortable.create(el, {
             group: 'photo',
-            animation: 150,
-
         });
 
     });
@@ -312,5 +195,3 @@
 </script>
  </body>
 </html>
-
- 
