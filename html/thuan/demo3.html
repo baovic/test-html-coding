@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta content="" name="copyright">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="ja" http-equiv="Content-Language">
+    <meta content="text/css" http-equiv="Content-Style-Type">
+    <meta content="text/javascript" http-equiv="Content-Script-Type">
+    <meta id="viewport" name="viewport" content="" />
+    <script>
+        if(screen.width <= 750){
+            document.getElementById("viewport").setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
+        }
+    </script>
+    <title>UEFA Champions League</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="common/css/common.css">
+    <script src="common/js/jquery-1.9.1.min.js"></script>
+    <script src="common/js/script.js"></script>
+    
+  </head>
+  <body>
+        <div class="container">
+            <header>
+               <a href="#" class="logo"><img src="common/imgs/logo.png"></a>
+               <h1>UEFA Champions League
+                <span>Quarter-final Draw Predictions</span></h1>
+               <a class="login show-pc">Login</a>
+
+            </header>
+            <!-- header -->
+            <div class="NowMake">
+                    <p class="p1">Drag the logo of each club below to predict the quarter finals.</p>
+            </div>
+            <!-- NowMake -->
+            <div id="list12" class="match match2" style="text-align:center">
+                <ul id="list1" class="ui-sortable">
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-1.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-2.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-3.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-4.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-5.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-6.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-7.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-8.png"/></li>
+                </ul>
+                <form class="fMacth">
+                    <div class="bgMatch">
+                        <div class="list2sub">
+                            <ul id="list2" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list3" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list4" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list5" class="list2 ui-sortable">
+                            </ul>
+                        </div>
+                        <div class="list3sub">
+                            <ul id="list6" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list7" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list8" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list9" class="list2 ui-sortable">
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="submitP">
+                            <a class="ashare asharepage2" href="">Share</a>
+                            <input type="submit" value="Submit" class="submit submitpage2">
+                    </p>
+                </form>
+                <!-- flag -->
+                <div class="navFooter show-sp">
+                    <span class="login down">Login</span>
+                </div>
+            </div>
+                <!-- match -->
+            <div class="formS">
+                <span class="up show-sp">Login</span>
+                <form>
+                    <p class="pf">Enter your details to save your predictions to win <span style="color:#ffe400">€100,000!</span></p>
+                    <fieldset class="fieldset1">
+                        <label>Name:</label>
+                        <input class="name" type="text">
+                    </fieldset> 
+                    <fieldset>
+                        <label>Email:</label>
+                        <input class="email" type="text">
+                    </fieldset>
+                    <fieldset>
+                        <label>Password:</label>
+                        <input class="password" type="text">
+                    </fieldset>
+                    <fieldset>
+                        <input type="submit" value="Sign Up" class="submitF">
+                    </fieldset>
+                    <fieldset class="rfieldset">
+                            <a href="">Sign Up With</a>
+                            <a href="#"><img src="common/imgs/icon-face.png"></a>
+                            <a href="#"><img src="common/imgs/icon-twice.png"></a>
+                    </fieldset
+                </form>
+            </div>
+        </div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script>
+$('.ui-sortable').sortable({
+    connectWith: '.ui-sortable',
+    tolerance: 'pointer'
+});
+$('.ui-sortable li').mousedown(function() {
+    $('.ui-sortable').not($(this).parent()).each(function() {
+        if ($(this).find('li').length >= 1) {
+            if ($(this).attr('id') != "list1" ) {
+                $(this).sortable('disable');
+            }
+        }
+    });
+});
+$('.ui-sortable li').mouseup(function() {
+    $('.ui-sortable').each(function() {
+        $(this).sortable('enable');
+    });
+});
+</script>
+<!--Sortable for sp-->
+<script src="common/js/Sortable.js"></script>
+<script type="text/javascript">
+ if(screen.width <= 750){
+$('#list1').sortable({
+    items: '> .ui-sortable-handle',
+    placeholder: "ui-state-highlight",
+    helper: "clone",
+    scroll: true
+});
+
+}
+
+</script>
+ </body>
+</html>
