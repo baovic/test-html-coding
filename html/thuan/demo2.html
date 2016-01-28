@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Bin</title>
+<meta charset="UTF-8" />
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by anonymous (http://jsbin.com/asaVUmAP/5/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<meta name="viewport" content="initial-scale=1.0">
+<link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.js"></script>
+<script src="https://raw.github.com/furf/jquery-ui-touch-punch/master/jquery.ui.touch-punch.min.js"></script>
+
+<style id="jsbin-css">
+body {
+    background:#ccc;
+    height: 100%;
+}
+.sort-container {
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    padding: 5%;
+    overflow: auto;
+    background: #202020;
+}
+.dialog {
+    position: relative;
+    margin: 10px auto;
+    width: 200px;
+    height: 50px;
+    color: #ccc;
+    background: #333;
+    overflow: auto;
+}
+.dialog textarea {
+    position:relative;
+    width:90%;
+    top:5%;
+    left:5%;
+    height:90%;
+    border:0;
+    padding:0;
+    margin:0;
+}
+.dialogname {
+    cursor:pointer;
+    color:#fff;
+    display:block;
+    width:100%;
+}
+</style>
+</head>
+<body>
+<div class="sort-container">
+    <div class="sort"> <span class="dialogname" title=" Heading 1">&nbsp; &#x25bc; Heading 1</span>
+        <div class="dialog" id="dialog4">
+            test1
+        </div>
+    </div>
+    <div class="sort"> <span class="dialogname" title=" Heading 2">&nbsp; &#x25bc; Heading 2</span>
+
+        <div class="dialog" id="dialog1">
+            <textarea>test3</textarea>
+        </div>
+    </div>
+    <div class="sort"> <span class="dialogname" title=" Heading 3">&nbsp; &#x25bc; Heading 3</span>
+
+        <div class="dialog" id="dialog2">test3
+        </div>
+    </div>
+    <div class="sort"> <span class="dialogname" title=" Heading 4">&nbsp; &#x25bc; Heading 4</span>
+
+        <div class="dialog" id="dialog3">
+            test4
+        </div>
+    </div>
+</div>
+  <script>
+// Toggle Dialog Visibility
+// $(".dialogname").toggle(function () {
+//     $(this).next().slideUp();
+//     $(this).html("&nbsp; &#x25b6;" + $(this).attr('title'));
+// }, function () {
+//     $(this).next().slideDown();
+//     $(this).html("&nbsp; &#x25bc;" + $(this).attr('title'));
+// });
+
+$('.sort-container').sortable({
+    items: '> .sort',
+    placeholder: "ui-state-highlight",
+    helper: "clone",
+    scroll: true
+});
+// $('.dialog').on('click mousedown mouseover select touchstart touchmove', function (evt) {
+//     var e = evt || window.event;
+//     e.stopPropagation();
+// });
+</script>
+
+
+</body>
+</html>
