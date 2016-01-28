@@ -550,6 +550,9 @@ ul#list1 li{
     margin: 0 18px;
     display: inline-block;
 }
+ul#list1 li img{
+    cursor: move;
+}
 .fMacth{
     display: block;
     text-align: center;
@@ -601,4 +604,5 @@ ul#list1 li{
 .list3sub ul li img{
     vertical-align: middle;
     margin: 0 auto;
+    cursor: move;
 }
