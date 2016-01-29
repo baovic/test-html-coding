@@ -599,7 +599,7 @@ ul#list1 li img{
     vertical-align: middle;
     text-align: center;
     height: 101px;
-    background: #ff0000;
+    background: rgba(98,98,98,0.2);;
 }
 .list2sub ul li img,
 .list3sub ul li img{
