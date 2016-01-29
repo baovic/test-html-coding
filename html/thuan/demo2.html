@@ -58,6 +58,79 @@ body {
     display:block;
     width:100%;
 }
+/*flag*/
+ul#list1{
+    width: 100%;
+    min-width: 320px;
+    padding: 0;
+    margin: 50px auto;
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    min-height: 80px;
+    vertical-align: top;
+    overflow: hidden;
+}
+ul#list1 li{
+    margin: 0 18px;
+    display: inline-block;
+}
+ul#list1 li img{
+    cursor: move;
+}
+.fMacth{
+    display: block;
+    text-align: center;
+    margin:auto 0;
+    position: relative;
+}
+.bgMatch{
+    background: url(../imgs/bg-match.png) no-repeat left center;
+   
+    display: inline-block;
+    width: 317px;
+    height: 426px;
+    text-align: center;
+    margin: 0 auto;
+}
+.list2sub,
+.list3sub{
+    width: 106px;
+    height: 101px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: left;
+}
+.list3sub{
+    float: right;
+}
+.list2sub ul,
+.list3sub ul{
+    margin: 0 0 7px 0;
+    padding: 0;
+    vertical-align: top;
+    width: 100%;
+
+    list-style-type: none;
+    height: 101px;
+}
+.list2sub ul li,
+.list3sub ul li{
+    margin: 0;
+    padding: 0;
+    width: 106px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 101px;
+}
+.list2sub ul li img,
+.list3sub ul li img{
+    vertical-align: middle;
+    margin: 0 auto;
+    cursor: move;
+}
 </style>
 </head>
 <body>
@@ -85,6 +158,50 @@ body {
         </div>
     </div>
 </div>
+<div id="list12" class="match match2" style="text-align:center">
+                <ul id="list1" class="ui-sortable">
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-1.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-2.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-3.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-4.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-5.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-6.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-7.png"/></li>
+                      <li class="ui-sortable-handle"><img src="common/imgs/flag-8.png"/></li>
+                </ul>
+                <form class="fMacth">
+                    <div class="bgMatch">
+                        <div class="list2sub">
+                            <ul id="list2" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list3" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list4" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list5" class="list2 ui-sortable">
+                            </ul>
+                        </div>
+                        <div class="list3sub">
+                            <ul id="list6" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list7" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list8" class="list2 ui-sortable">
+                            </ul>
+                            <ul id="list9" class="list2 ui-sortable">
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="submitP">
+                            <a class="ashare asharepage2" href="">Share</a>
+                            <input type="submit" value="Submit" class="submit submitpage2">
+                    </p>
+                </form>
+                <!-- flag -->
+                <div class="navFooter show-sp">
+                    <span class="login down">Login</span>
+                </div>
+            </div>
   <script>
 // Toggle Dialog Visibility
 // $(".dialogname").toggle(function () {
@@ -97,6 +214,12 @@ body {
 
 $('.sort-container').sortable({
     items: '> .sort',
+    placeholder: "ui-state-highlight",
+    helper: "clone",
+    scroll: true
+});
+$('#list1').sortable({
+    items: '> .ui-sortable-handle',
     placeholder: "ui-state-highlight",
     helper: "clone",
     scroll: true
