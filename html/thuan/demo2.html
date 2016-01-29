@@ -20,7 +20,7 @@ Released under the MIT license: http://jsbin.mit-license.org
             document.getElementById("viewport").setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
         }
     </script>
-    
+
 <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.js"></script>
@@ -92,7 +92,7 @@ ul#list1 li img{
     position: relative;
 }
 .bgMatch{
-    background: url(../imgs/bg-match.png) no-repeat left center;
+    background: #ff0;
    
     display: inline-block;
     width: 317px;
@@ -131,6 +131,7 @@ ul#list1 li img{
     vertical-align: middle;
     text-align: center;
     height: 101px;
+    background: #ff0000;
 }
 .list2sub ul li img,
 .list3sub ul li img{
@@ -225,12 +226,31 @@ $('.sort-container').sortable({
     helper: "clone",
     scroll: true
 });
-$('#list1').sortable({
-    items: '> .ui-sortable-handle',
+$('.ui-sortable').sortable({
+    connectWith: '.ui-sortable',
     placeholder: "ui-state-highlight",
     helper: "clone",
     scroll: true
 });
+//////////////
+// $('.ui-sortable').sortable({
+//     connectWith: '.ui-sortable',
+//     tolerance: 'pointer'
+// });
+// $('.ui-sortable li').mousedown(function() {
+//     $('.ui-sortable').not($(this).parent()).each(function() {
+//         if ($(this).find('li').length >= 1) {
+//             if ($(this).attr('id') != "list1" ) {
+//                 $(this).sortable('disable');
+//             }
+//         }
+//     });
+// });
+// $('.ui-sortable li').mouseup(function() {
+//     $('.ui-sortable').each(function() {
+//         $(this).sortable('enable');
+//     });
+// });
 // $('.dialog').on('click mousedown mouseover select touchstart touchmove', function (evt) {
 //     var e = evt || window.event;
 //     e.stopPropagation();
