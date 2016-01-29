@@ -39,6 +39,7 @@ body {
     padding: 5%;
     overflow: auto;
     background: #202020;
+    display: none;
 }
 .dialog {
     position: relative;
@@ -220,37 +221,39 @@ ul#list1 li img{
 //     $(this).html("&nbsp; &#x25bc;" + $(this).attr('title'));
 // });
 
-$('.sort-container').sortable({
-    items: '> .sort',
-    placeholder: "ui-state-highlight",
-    helper: "clone",
-    scroll: true
-});
-$('.ui-sortable').sortable({
-    connectWith: '.ui-sortable',
-    placeholder: "ui-state-highlight",
-    helper: "clone",
-    scroll: true
-});
-//////////////
+// $('.sort-container').sortable({
+//     items: '> .sort',
+//     placeholder: "ui-state-highlight",
+//     helper: "clone",
+//     scroll: true
+// });
 // $('.ui-sortable').sortable({
 //     connectWith: '.ui-sortable',
-//     tolerance: 'pointer'
+//     placeholder: "ui-state-highlight",
+//     helper: "clone",
+//     tolerance: 'pointer',
+//     scroll: true
 // });
-// $('.ui-sortable li').mousedown(function() {
-//     $('.ui-sortable').not($(this).parent()).each(function() {
-//         if ($(this).find('li').length >= 1) {
-//             if ($(this).attr('id') != "list1" ) {
-//                 $(this).sortable('disable');
-//             }
-//         }
-//     });
-// });
-// $('.ui-sortable li').mouseup(function() {
-//     $('.ui-sortable').each(function() {
-//         $(this).sortable('enable');
-//     });
-// });
+//////////////
+$('.ui-sortable').sortable({
+    connectWith: '.ui-sortable',
+     placeholder: "ui-state-highlight",
+    tolerance: 'pointer'
+});
+$('.ui-sortable li').mousedown(function() {
+    $('.ui-sortable').not($(this).parent()).each(function() {
+        if ($(this).find('li').length >= 1) {
+            if ($(this).attr('id') != "list1" ) {
+                $(this).sortable('disable');
+            }
+        }
+    });
+});
+$('.ui-sortable li').mouseup(function() {
+    $('.ui-sortable').each(function() {
+        $(this).sortable('enable');
+    });
+});
 // $('.dialog').on('click mousedown mouseover select touchstart touchmove', function (evt) {
 //     var e = evt || window.event;
 //     e.stopPropagation();
