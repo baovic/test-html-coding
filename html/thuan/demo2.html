@@ -13,7 +13,14 @@ Copyright (c) 2016 by anonymous (http://jsbin.com/asaVUmAP/5/edit)
 Released under the MIT license: http://jsbin.mit-license.org
 -->
 <meta name="robots" content="noindex">
-<meta name="viewport" content="initial-scale=1.0">
+
+<meta id="viewport" name="viewport" content="" />
+    <script>
+        if(screen.width <= 750){
+            document.getElementById("viewport").setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
+        }
+    </script>
+    
 <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.js"></script>
@@ -28,7 +35,7 @@ body {
     position:absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 30%;
     padding: 5%;
     overflow: auto;
     background: #202020;
