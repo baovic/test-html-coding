@@ -338,10 +338,10 @@ ul#list1 li img {
     .s-match li:nth-child(2){
         margin-top: -31px !important;
     }
-     .s-match li:first-child,
+    /* .s-match li:first-child,
     .s-match li:last-child{
         vertical-align: top;
-    }
+    }*/
     ul#list1 {
     margin: 35px auto;
     }
