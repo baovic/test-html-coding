@@ -127,7 +127,7 @@ a.ashare {
     background: #24a3b2;
     display: inline-block !important;
 }
-/*.submit{
+.submit{
     color: #fff;
     text-align: center;
     width: 123px;
@@ -139,7 +139,7 @@ a.ashare {
     position: inherit;
     border: none;
     cursor: pointer;
-}*/
+}
 a.ashare, .submit{
     margin: 0;
     width: 45%;
@@ -398,7 +398,7 @@ ul#list1 li img {
         text-align: center;
         display: inline-block;
         margin: 0 auto;
-        font-size: 16px;
+        font-size: 17px;
     }
     ul#list1 li {
     margin: 0 15px;
