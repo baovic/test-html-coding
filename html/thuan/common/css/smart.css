@@ -389,11 +389,11 @@ ul#list1 li img {
     }
     a.ashare, .submit{
         font-size: 17px;
-        width: 37%;
+        width: 78px;
     }
     .submit{
     min-width: auto;
-    width: 71px;
+    
     height: 40px;
         text-align: center;
         display: inline-block;
