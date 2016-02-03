@@ -394,7 +394,7 @@ ul#list1 li img {
     .submit{
     min-width: auto;
     width: auto;
-    height: auto;
+    height: 40px;
         text-align: center;
         display: inline-block;
         margin: 0 auto;
