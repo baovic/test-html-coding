@@ -336,7 +336,10 @@ ul#list1 li img {
     margin-right: 2%;
     }
     .s-match li:nth-child(2){
-        margin-top: 10px;
+        margin-top: -31px;
+    }
+    .s-match li:first-child{
+        vertical-align: top;
     }
     ul#list1 {
     margin: 35px auto;
