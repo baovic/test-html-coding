@@ -392,7 +392,7 @@ ul#list1 li img {
         width: 37%;
     }
     .submit{
-       min-width: auto;
+    min-width: auto;
     width: auto;
     height: auto;
         text-align: center;

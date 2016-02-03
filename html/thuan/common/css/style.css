@@ -269,7 +269,7 @@ a.ashare{
     line-height: 38px;
     background: url(../imgs/icon-bullet.png) no-repeat right center #bacee2;
 }
-/*.submit{
+.submit{
     color: #fff;
     text-align: center;
     width: 120px;
@@ -283,7 +283,7 @@ a.ashare{
  box-sizing: border-box; 
     border: none;
     cursor: pointer;
-}*/
+}
 .point{
     color: #000;
     font-size: 30px;
