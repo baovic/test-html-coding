@@ -75,13 +75,14 @@ header h1 span {
 }
 .s-match li {
     margin: 0;
-    width: 20% 
+    width: 20%;
+    vertical-align: top;
 }
 .s-match li .nameM{
     font-size: 15px;
 }
 .s-match li:nth-child(2) {
-    margin: 0 5%;
+    margin: 10% 5% 0 5%;
     width: auto;
 }
 .s-match li img{
