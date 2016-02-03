@@ -335,13 +335,12 @@ ul#list1 li img {
     font-size: 18px;
     margin-right: 2%;
     }
-    .s-match li:nth-child(2){
-        margin-top: -31px !important;
-    }
-    /* .s-match li:first-child,
-    .s-match li:last-child{
+    .s-match li{
         vertical-align: top;
-    }*/
+    }
+    .s-match li:nth-child(2){
+        margin-top: 40px !important;
+    }
     ul#list1 {
     margin: 35px auto;
     }
@@ -408,5 +407,8 @@ ul#list1 li img {
     margin: 0 15px;
     display: inline-block;
     width: 14%;
+    }
+    .s-match li:nth-child(2){
+        margin-top: 26px !important;
     }
 }
